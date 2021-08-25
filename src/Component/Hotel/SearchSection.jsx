@@ -20,6 +20,7 @@ import SmartphoneIcon from "@material-ui/icons/Smartphone";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { PopularCities } from "./PopularCities";
+import { CommonSearchBox } from "../CommonSearchBox";
 export const SearchSection = () => {
   const [hotel, setHotel] = useState(true);
   const [openFormModal, setOpenFormModal] = useState(false);
@@ -80,98 +81,7 @@ export const SearchSection = () => {
             <Button className={style.buttonBorderNone}>CRUISES</Button>
           </ButtonGroup>
         </Paper>
-        <Paper>
-          <form>
-            <TextField label="Where to?" variant="outlined" />
-            <TextField
-              label="Check-in"
-              type="date"
-              defaultValue={new Date()}
-              className={style.date}
-              InputLabelProps={{
-                shrink: true
-              }}
-            />
-            <TextField
-              label="Check-out"
-              type="date"
-              defaultValue={new Date()}
-              className={style.date}
-              InputLabelProps={{
-                shrink: true
-              }}
-            />
-            <Button onClick={handleOpenModal}>
-              {" "}
-              {adults > 1
-                ? `${adults} Adults`
-                : adults === 1
-                ? `, ${adults} Adult`
-                : ""}
-              {children > 1
-                ? `, ${children} Children`
-                : children === 1
-                ? `, ${children} Child`
-                : ""}
-              {rooms > 1
-                ? `, ${rooms} Rooms`
-                : rooms === 1
-                ? `, ${rooms} Room`
-                : ""}
-            </Button>
-            <Modal
-              open={openFormModal}
-              onClose={handleCloseModal}
-              aria-labelledby="simple-modal-title"
-              aria-describedby="simple-modal-description"
-            >
-              <Box>
-                <Paper>
-                  <Typography>Rooms</Typography>
-                  <Button onClick={() => setRooms((prev) => prev - 1)}>
-                    -
-                  </Button>
-                  {rooms}
-                  <Button onClick={() => setRooms((prev) => prev + 1)}>
-                    +
-                  </Button>
-                </Paper>
-                <Paper>
-                  <Typography>Adults</Typography>
-                  <Button onClick={() => setAdults((prev) => prev - 1)}>
-                    -
-                  </Button>
-                  {adults}
-                  <Button onClick={() => setAdults((prev) => prev + 1)}>
-                    +
-                  </Button>
-                </Paper>
-                <Paper>
-                  <Typography>Children</Typography>
-                  <Button onClick={() => setChildren((prev) => prev - 1)}>
-                    -
-                  </Button>
-                  {children}
-                  <Button onClick={() => setChildren((prev) => prev + 1)}>
-                    +
-                  </Button>
-                </Paper>
-                <Paper>
-                  <Button
-                    onClick={handleCloseModal}
-                    variant="contained"
-                    color="primary"
-                  >
-                    Done
-                  </Button>
-                </Paper>
-              </Box>
-            </Modal>
-            <Button onClick={handleSubmit} variant="contained" color="primary">
-              FIND YOUR HOTEL
-            </Button>
-          </form>
-        </Paper>
+        <CommonSearchBox />
         <Paper>
           <Box>
             <Typography>
@@ -257,102 +167,7 @@ export const SearchSection = () => {
             aria-labelledby="simple-modal-title"
             aria-describedby="simple-modal-description"
           >
-            <Paper>
-              <form>
-                <TextField label="Where to?" variant="outlined" />
-                <TextField
-                  label="Check-in"
-                  type="date"
-                  defaultValue={new Date()}
-                  className={style.date}
-                  InputLabelProps={{
-                    shrink: true
-                  }}
-                />
-                <TextField
-                  label="Check-out"
-                  type="date"
-                  defaultValue={new Date()}
-                  className={style.date}
-                  InputLabelProps={{
-                    shrink: true
-                  }}
-                />
-                <Button onClick={handleOpenModal}>
-                  {" "}
-                  {adults > 1
-                    ? `${adults} Adults`
-                    : adults === 1
-                    ? `, ${adults} Adult`
-                    : ""}
-                  {children > 1
-                    ? `, ${children} Children`
-                    : children === 1
-                    ? `, ${children} Child`
-                    : ""}
-                  {rooms > 1
-                    ? `, ${rooms} Rooms`
-                    : rooms === 1
-                    ? `, ${rooms} Room`
-                    : ""}
-                </Button>
-                <Modal
-                  open={openFormModal}
-                  onClose={handleCloseModal}
-                  aria-labelledby="simple-modal-title"
-                  aria-describedby="simple-modal-description"
-                >
-                  <Box>
-                    <Paper>
-                      <Typography>Rooms</Typography>
-                      <Button onClick={() => setRooms((prev) => prev - 1)}>
-                        -
-                      </Button>
-                      {rooms}
-                      <Button onClick={() => setRooms((prev) => prev + 1)}>
-                        +
-                      </Button>
-                    </Paper>
-                    <Paper>
-                      <Typography>Adults</Typography>
-                      <Button onClick={() => setAdults((prev) => prev - 1)}>
-                        -
-                      </Button>
-                      {adults}
-                      <Button onClick={() => setAdults((prev) => prev + 1)}>
-                        +
-                      </Button>
-                    </Paper>
-                    <Paper>
-                      <Typography>Children</Typography>
-                      <Button onClick={() => setChildren((prev) => prev - 1)}>
-                        -
-                      </Button>
-                      {children}
-                      <Button onClick={() => setChildren((prev) => prev + 1)}>
-                        +
-                      </Button>
-                    </Paper>
-                    <Paper>
-                      <Button
-                        onClick={handleCloseModal}
-                        variant="contained"
-                        color="primary"
-                      >
-                        Done
-                      </Button>
-                    </Paper>
-                  </Box>
-                </Modal>
-                <Button
-                  onClick={handleSubmit}
-                  variant="contained"
-                  color="primary"
-                >
-                  FIND YOUR HOTEL
-                </Button>
-              </form>
-            </Paper>
+            <CommonSearchBox />
           </Modal>
           <Box>
             <Box>
