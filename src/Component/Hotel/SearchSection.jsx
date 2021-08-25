@@ -22,11 +22,6 @@ import { Link } from "react-router-dom";
 import { PopularCities } from "./PopularCities";
 import { CommonSearchBox } from "../CommonSearchBox";
 export const SearchSection = () => {
-  const [hotel, setHotel] = useState(true);
-  const [openFormModal, setOpenFormModal] = useState(false);
-  const [adults, setAdults] = useState(2);
-  const [rooms, setRooms] = useState(1);
-  const [children, setChildren] = useState(0);
   const [checkedCar, setCheckedCar] = useState(false);
   const [checkedFlight, setCheckedFlight] = useState(false);
   console.log(checkedCar, checkedFlight);
@@ -46,27 +41,24 @@ export const SearchSection = () => {
     setCheckedCar(event.target.checked);
   };
 
-  const handleCloseModal = () => {
-    setOpenFormModal(false);
-  };
-
-  const handleOpenModal = () => {
-    setOpenFormModal(true);
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
   };
   return (
     <Box>
-      <img
-        className={style.backGroundImage}
-        src="https://images.ctfassets.net/sdx4pteldsvw/60AIXAaPwFRDyxA27uAoi1/c6ce110af174ceec011857133664ca60/pcln-hp-hero-freedom.jpeg"
-        alt="back_image"
-      />
+      <Box className={style.relativePositioningBox}>
+        <img
+          className={style.backGroundImage}
+          src="https://images.ctfassets.net/sdx4pteldsvw/60AIXAaPwFRDyxA27uAoi1/c6ce110af174ceec011857133664ca60/pcln-hp-hero-freedom.jpeg"
+          alt="back_image"
+        />
+      </Box>
 
       {/* new section */}
-      <Box>
+      <Box
+        className={style.absolutePositioningBox}
+        style={{ top: "5%", left: "8%" }}
+      >
         <Paper elevation={3}>
           <Typography variant="h4">Need a hotel or private rental?</Typography>
           <Typography variant="h5">
@@ -114,7 +106,7 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Box>
+      <Box className={style.relativePositioningBox}>
         <Paper>
           <MapIcon />
           <Typography>Looking for your trip details?</Typography>
@@ -326,7 +318,9 @@ export const SearchSection = () => {
       {/* new section */}
 
       <Box>
-        <Typography>Discover deals in every city</Typography>
+        <Typography variant="h6" style={{ fontWeight: "400" }}>
+          Discover deals in every city
+        </Typography>
 
         <Box>
           <PopularCities />
@@ -336,11 +330,30 @@ export const SearchSection = () => {
       {/* new section */}
 
       <Box>
-        <Paper>
-          <Box>
-            <Typography>A VACATION YOU'LL REMEMBER FOREVER</Typography>
-            <Typography>Walt Disney World Vacations</Typography>
-            <Typography>
+        <Paper
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "20px"
+          }}
+        >
+          <Box style={{ textAlign: "left" }}>
+            <Typography
+              variant="button"
+              display="block"
+              style={{ color: "#4f6f9D", marginBottom: "10px" }}
+            >
+              A VACATION YOU'LL REMEMBER FOREVER
+            </Typography>
+            <Typography
+              variant="h4"
+              display="block"
+              style={{ fontWeight: "500", marginBottom: "30px" }}
+            >
+              Walt Disney World Vacations
+            </Typography>
+            <Typography style={{ fontSize: "1.4rem", color: "#4f6f9D" }}>
               Book your Walt Disney World tickets here! Plus, complete your
               vacation and book your hotel.
             </Typography>
@@ -349,45 +362,66 @@ export const SearchSection = () => {
               More Info
             </Button>
           </Box>
-          <img
-            src="https://images.ctfassets.net/sdx4pteldsvw/4l4ZVmeFp6ivXQH6MuZXHI/45ea23e34bb96b16bb35331d3bf6b23d/StarWarsGalaxyEdge.jpg?h=600&q=70"
-            alt=""
-          />
+          <Box>
+            <img
+              src="https://images.ctfassets.net/sdx4pteldsvw/4l4ZVmeFp6ivXQH6MuZXHI/45ea23e34bb96b16bb35331d3bf6b23d/StarWarsGalaxyEdge.jpg?h=600&q=70"
+              alt=""
+            />
+          </Box>
         </Paper>
       </Box>
 
       {/* new section */}
 
       <Box>
-        <Typography>
+        <Typography variant="h5" style={{ fontWeight: "500" }}>
           Maximize your savings with applying for the Priceline Rewards™ Visa®
           Card!
         </Typography>
         <ul>
-          <Typography>
+          <Typography
+            variant="h6"
+            style={{ fontWeight: "400", color: "#4f6f9D" }}
+          >
             <li>
               Looking to fast-track your VIP status? Automatically become VIP
               Gold once approved.
             </li>
           </Typography>
 
-          <Typography>
+          <Typography
+            variant="h6"
+            style={{ fontWeight: "400", color: "#4f6f9D" }}
+          >
             <li>
               Earn 5X Points on eligible hotel, flight, package, rental car and
               cruise purchases using your card.*
             </li>
           </Typography>
-          <Typography>
+          <Typography
+            variant="h6"
+            style={{ fontWeight: "400", color: "#4f6f9D" }}
+          >
             <li>Plus, get special cardmember coupons, discounts & perks!</li>
           </Typography>
         </ul>
-        <Button variant="contained" color="primary">
+        <Button
+          variant="contained"
+          color="primary"
+          style={{
+            backgroundColor: "#0068EF",
+            padding: "10px 40px",
+            marginBottom: "30px"
+          }}
+        >
           Learn More
         </Button>
-        <img
-          src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/card-46f5bcb5ad798f1803a957189347cd33.jpg"
-          alt=""
-        />
+        <Box>
+          <img
+            src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/card-46f5bcb5ad798f1803a957189347cd33.jpg"
+            alt=""
+          />
+        </Box>
       </Box>
       {/* end of home box */}
     </Box>

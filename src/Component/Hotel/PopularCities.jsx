@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
-
+import style from "./SearchSection.module.css";
 export const PopularCities = () => {
   const cities = [
     {
@@ -67,9 +67,8 @@ export const PopularCities = () => {
     }
   ];
   return (
-    <>
+    <Box className={style.gridItems}>
       {cities.map((ele, index) => {
-        console.log(ele.name, ele.speciality, ele.image);
         return (
           <Box key={index}>
             <img src={ele.image} alt="" />
@@ -89,6 +88,6 @@ export const PopularCities = () => {
           </Box>
         );
       })}
-    </>
+    </Box>
   );
 };
