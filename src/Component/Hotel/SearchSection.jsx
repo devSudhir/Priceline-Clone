@@ -107,23 +107,48 @@ export const SearchSection = () => {
       {/* new section */}
 
       <Box className={style.relativePositioningBox}>
-        <Paper>
-          <MapIcon />
-          <Typography>Looking for your trip details?</Typography>
-          <Typography>
-            Quickly find your flight, hotel, package or rental car reservation
-          </Typography>
-          <Button onClick={handleSubmit} variant="contained" color="primary">
+        <Paper
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "left",
+            textAlign: "center"
+          }}
+        >
+          <MapIcon style={{ color: "#0068EF", backgroundColor: "#E8F2FF" }} />
+          <Box>
+            <Typography style={{ color: "#0068EF" }}>
+              Looking for your trip details?
+            </Typography>
+            <Typography>
+              Quickly find your flight, hotel, package or rental car reservation
+            </Typography>
+          </Box>
+
+          <Button
+            onClick={handleSubmit}
+            variant="contained"
+            color="primary"
+            style={{ backgroundColor: "#0068EF", textTransform: "none" }}
+          >
             Find your Trip
           </Button>
         </Paper>
       </Box>
 
       {/* new section */}
-
-      <Box>
-        <Typography>Your Recent Searches</Typography>
-        <Paper>
+      <Typography style={{ textAlign: "left" }}>
+        Your Recent Searches
+      </Typography>
+      <Box style={{ display: "flex" }}>
+        <Paper
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            textAlign: "center"
+          }}
+        >
           <DomainIcon />
           <Box>
             <Typography>Pune,In</Typography>
@@ -131,7 +156,14 @@ export const SearchSection = () => {
           </Box>
           <Link to="/Hotel">Search again</Link>
         </Paper>
-        <Paper>
+        <Paper
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            textAlign: "center"
+          }}
+        >
           <DomainIcon />
           <Box>
             <Typography>Mumbai,In</Typography>
@@ -143,65 +175,105 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Badge
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "left"
-        }}
-        badgeContent="NEW"
-      >
-        <Paper>
-          <Typography>Introducing Pricebreakers</Typography>
-          <Button onClick={handleOpenSearchModal}>Search Pricebreakers</Button>
-          <Modal
-            open={searchModalPopup}
-            onClose={handleCloseSearchModal}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-          >
-            <CommonSearchBox />
-          </Modal>
-          <Box>
-            <Box>
-              <img
-                src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/One-635a492d0b64f53be39e1cab9c120f89.svg"
-                alt=""
-              />
-              <Typography>
-                See 3 popular hotels at a heavily discounted price.
-              </Typography>
-            </Box>
-            <Box>
-              <img
-                src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/Two-43f2bfbd4854c2d779530dca660b1708.svg"
-                alt=""
-              />
-              <Typography>
-                Click choose and we’ll pick one of the 3 hotels.
-              </Typography>
-            </Box>
-            <Box>
-              <img
-                src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/Three-a112201b65eb30d1dfecbdd118ebcc92.svg"
-                alt=""
-              />
-              <Typography>See which hotel right after you book!</Typography>
-            </Box>
-          </Box>
-        </Paper>
-      </Badge>
+      <Box style={{ display: "flex", padding: "30px", maxWidth: "100vw" }}>
+        <Badge
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "left"
+          }}
+          badgeContent="NEW"
+          style={{ backgroundColor: "red", width: "60%" }}
+        >
+          <Paper style={{}}>
+            <Box
+              style={{
+                display: "flex",
+                padding: "15px",
+                alignItems: "center",
+                justifyContent: "space-between"
+              }}
+            >
+              <Box
+                style={{
+                  display: "flex"
+                }}
+              >
+                <Typography variant="h4" style={{ marginRight: "10px" }}>
+                  Introducing{" "}
+                </Typography>
+                <Typography variant="h4" style={{ color: "#0068EF" }}>
+                  Pricebreakers
+                </Typography>
+              </Box>
 
-      {/* new section */}
+              <Button
+                onClick={handleOpenSearchModal}
+                style={{
+                  backgroundColor: "#EDF0F3",
+                  color: "#0068EF",
+                  padding: "10px 15px"
+                }}
+              >
+                Search Pricebreakers
+              </Button>
+              <Modal
+                open={searchModalPopup}
+                onClose={handleCloseSearchModal}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description"
+              >
+                <CommonSearchBox />
+              </Modal>
+            </Box>
 
-      <Box>
-        <Paper>
+            <Box style={{ display: "flex", padding: "15px", width: "90%" }}>
+              <Box>
+                <img
+                  src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/One-635a492d0b64f53be39e1cab9c120f89.svg"
+                  alt=""
+                />
+                <Typography>
+                  See 3 popular hotels at a heavily discounted price.
+                </Typography>
+              </Box>
+              <Box>
+                <img
+                  src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/Two-43f2bfbd4854c2d779530dca660b1708.svg"
+                  alt=""
+                />
+                <Typography>
+                  Click choose and we’ll pick one of the 3 hotels.
+                </Typography>
+              </Box>
+              <Box>
+                <img
+                  src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/Three-a112201b65eb30d1dfecbdd118ebcc92.svg"
+                  alt=""
+                />
+                <Typography>See which hotel right after you book!</Typography>
+              </Box>
+            </Box>
+          </Paper>
+        </Badge>
+        <Paper
+          style={{
+            display: "flex",
+            padding: "15px",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "60%"
+          }}
+        >
           <Box>
-            <Typography>END OF SUMMER SALE</Typography>
+            <Typography variant="h4" style={{ color: "#0068EF" }}>
+              END OF SUMMER SALE
+            </Typography>
 
             <Typography>Save up to $50 on sitewide Express Deals.</Typography>
             <Typography>Travel anytime.</Typography>
           </Box>
           <img
+            style={{ width: "50%" }}
             src="https://images.ctfassets.net/sdx4pteldsvw/5NorD2qReoA0wA3ZkuBQcs/7ab0781f770a23bef75e8ce36c4e6869/Right_promo_box.jpg?w=330&h=448&f=center&fit=fill"
             alt=""
           />
@@ -210,36 +282,50 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Box>
-        <Paper>
+      <Box style={{ padding: "15px", backgroundColor: "#F4F6F8" }}>
+        <Paper
+          style={{
+            display: "flex",
+            backgroundColor: "#F4F6F8",
+            padding: "30px auto"
+          }}
+        >
           <Box>
-            <VerifiedUserIcon />
-            <Typography>FLEXIBLE BOOKINGS</Typography>
-            <Typography>
+            <VerifiedUserIcon style={{ color: "#0068EF" }} />
+            <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+              FLEXIBLE BOOKINGS
+            </Typography>
+            <Typography variant="button">
               Plans change. That’s why we offer free cancellation on most hotels
               & rental cars.
             </Typography>
           </Box>
           <Box>
-            <MonetizationOnIcon />
-            <Typography>INCREDIBLE DEALS</Typography>
-            <Typography>
+            <MonetizationOnIcon style={{ color: "#0068EF" }} />
+            <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+              INCREDIBLE DEALS
+            </Typography>
+            <Typography variant="button">
               Check out with confidence. Priceline members always get our best
               price.
             </Typography>
           </Box>
           <Box>
-            <DirectionsCarIcon />
-            <Typography>NO FLIGHT? NO PROBLEM</Typography>
-            <Typography>
+            <DirectionsCarIcon style={{ color: "#0068EF" }} />
+            <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+              NO FLIGHT? NO PROBLEM
+            </Typography>
+            <Typography variant="button">
               Bundle hotel & rental car deals to build your perfect getaway. No
               airtime required.
             </Typography>
           </Box>
           <Box>
-            <ContactSupportIcon />
-            <Typography>HELP 24/7</Typography>
-            <Typography>
+            <ContactSupportIcon style={{ color: "#0068EF" }} />
+            <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+              HELP 24/7
+            </Typography>
+            <Typography variant="button">
               We’re always here for you – reach us 24 hours a day, 7 days a
               week.
             </Typography>
@@ -248,21 +334,46 @@ export const SearchSection = () => {
       </Box>
 
       {/* new section */}
-      <Box>
-        <Paper>
-          <Box>
-            <Typography>SIGN UP & SAVE!</Typography>
-            <Typography>Save 10% On Your Next Trip!</Typography>
-            <Typography>
+      <Box style={{ textAlign: "left" }}>
+        <Paper
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "30px",
+            backgroundColor: "#F4F6F8"
+          }}
+        >
+          <Box style={{ width: "50%" }}>
+            <Typography
+              variant="button"
+              display="block"
+              style={{ color: "#4f6f9D", marginBottom: "10px" }}
+            >
+              SIGN UP & SAVE!
+            </Typography>
+            <Typography
+              variant="h4"
+              display="block"
+              style={{ fontWeight: "500", marginBottom: "30px" }}
+            >
+              Save 10% On Your Next Trip!
+            </Typography>
+            <Typography style={{ fontSize: "1.4rem", color: "#4f6f9D" }}>
               Unlock exclusive coupons, early access to sales and more when you
               sign up for Priceline emails.
             </Typography>
 
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              style={{ backgroundColor: "#0068EF" }}
+            >
               Sign up
             </Button>
           </Box>
           <img
+            style={{ width: "40%" }}
             src="https://images.ctfassets.net/sdx4pteldsvw/3MCmiZ7pAMjXK5eJcaGVx4/84c6956ee935728b5c7ffde820b8e42b/marketing-tout.jpeg?h=600&q=70"
             alt=""
           />
@@ -271,28 +382,65 @@ export const SearchSection = () => {
       {/* new section */}
 
       <Box>
-        <Paper>
-          <Box>
-            <Typography>SAVINGS ON THE GO</Typography>
-            <Typography>
+        <Paper
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "20px",
+            backgroundColor: "#F4F6F8"
+          }}
+        >
+          <Box style={{ textAlign: "left" }}>
+            <Typography
+              variant="button"
+              display="block"
+              style={{ color: "#4f6f9D", marginBottom: "10px" }}
+            >
+              SAVINGS ON THE GO
+            </Typography>
+            <Typography
+              variant="h4"
+              display="block"
+              style={{ fontWeight: "500", marginBottom: "30px" }}
+            >
               Exclusive Tonight Only Deals. Only in the App.
             </Typography>
-            <Typography>
+            <Typography style={{ fontSize: "1.4rem", color: "#4f6f9D" }}>
               Discover hotel, flight and rental car deals exclusively in the
               app. Download today to stay connected with important trip details
               — anytime, anywhere.
             </Typography>
             <Box>
-              <Box>
+              <Box
+                style={{
+                  display: "flex",
+                  justifyItems: "center",
+                  alignItems: "center"
+                }}
+              >
                 <SmartphoneIcon />
-                <TextField label="Enter your phone number" variant="outlined" />
+                <TextField
+                  style={{ border: "none" }}
+                  label="Enter your phone number"
+                  variant="outlined"
+                />
+                <Button
+                  variant="contained"
+                  color="primary"
+                  style={{
+                    backgroundColor: "#0068EF",
+                    padding: "10px 40px",
+                    marginLeft: "10px"
+                  }}
+                >
+                  Send Link
+                </Button>
               </Box>
-              <Button variant="contained" color="primary">
-                Send Link
-              </Button>
             </Box>
           </Box>
           <img
+            style={{ width: "30%" }}
             src="https://s1.pclncdn.com/design-assets/brand-assets/Priceline-App-devices.jpg"
             alt=""
           />
@@ -300,25 +448,53 @@ export const SearchSection = () => {
       </Box>
 
       {/* new section */}
-      <Box>
-        <Paper>
-          <Box>
-            <Typography>Sign up for Exclusive Email-only Coupons</Typography>
-            <Typography>
+      <Box style={{ width: "100vw", padding: "15px", margin: "auto" }}>
+        <Paper
+          style={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "auto",
+            textAlign: "center"
+          }}
+        >
+          <Box style={{ marginRight: "20px", padding: "20px" }}>
+            <Typography variant="h6" style={{ fontWeight: "600" }}>
+              Sign up for Exclusive Email-only Coupons
+            </Typography>
+            <Typography style={{ fontWeight: "500" }}>
               Exclusive access to coupons, special offers and promotions.
             </Typography>
           </Box>
-          <TextField label="example@address.com" variant="outlined" />
-          <Button variant="outlined" color="primary">
-            Send me deals
-          </Button>
+          <Box>
+            <TextField
+              style={{ marginRight: "10px" }}
+              label="example@address.com"
+              variant="outlined"
+            />
+            <Button
+              variant="outlined"
+              color="primary"
+              style={{
+                padding: "13px",
+                color: "#0068EF",
+                border: " 2px solid #0068EF"
+              }}
+            >
+              Send me deals
+            </Button>
+          </Box>
         </Paper>
       </Box>
 
       {/* new section */}
 
       <Box>
-        <Typography variant="h6" style={{ fontWeight: "400" }}>
+        <Typography
+          variant="h6"
+          style={{ fontWeight: "400", textAlign: "left" }}
+        >
           Discover deals in every city
         </Typography>
 
@@ -329,13 +505,14 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Box>
+      <Box style={{ padding: "30px", margin: "20px auto" }}>
         <Paper
           style={{
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            padding: "20px"
+            padding: "20px",
+            backgroundColor: "#F4F6F8"
           }}
         >
           <Box style={{ textAlign: "left" }}>
@@ -358,12 +535,21 @@ export const SearchSection = () => {
               vacation and book your hotel.
             </Typography>
 
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              style={{
+                backgroundColor: "#0068EF",
+                padding: "10px 20px",
+                marginTop: "20px"
+              }}
+            >
               More Info
             </Button>
           </Box>
           <Box>
             <img
+              style={{ width: "80%" }}
               src="https://images.ctfassets.net/sdx4pteldsvw/4l4ZVmeFp6ivXQH6MuZXHI/45ea23e34bb96b16bb35331d3bf6b23d/StarWarsGalaxyEdge.jpg?h=600&q=70"
               alt=""
             />
@@ -422,6 +608,9 @@ export const SearchSection = () => {
             alt=""
           />
         </Box>
+        <Typography>
+          *See <Link to="/terms">Terms and Conditions</Link> for details.
+        </Typography>
       </Box>
       {/* end of home box */}
     </Box>

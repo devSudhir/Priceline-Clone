@@ -19,10 +19,21 @@
   grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
 }
-.gridItems img {
-  width: 100%;
+
+.gridItems > div {
+  height: 50vh;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.gridItems > div:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+.gridItems > div:nth-child(7) {
+  grid-column: 2 / span 2;
 }
 
-.gridItems:nth-child(1) {
-  grid-column: 1 / span 2;
+.gridItems a {
+  color: #fff;
 }

@@ -1,8 +1,9 @@
 import { Typography } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import style from "./SearchSection.module.css";
+import { Link } from "react-router-dom";
 export const PopularCities = () => {
   const cities = [
     {
@@ -70,20 +71,48 @@ export const PopularCities = () => {
     <Box className={style.gridItems}>
       {cities.map((ele, index) => {
         return (
-          <Box key={index}>
-            <img src={ele.image} alt="" />
+          <Box
+            key={index}
+            style={{ backgroundImage: `url(${ele.image})` }}
+            className={`style.singleGridItems${index + 1}`}
+          >
             <Box>
-              <Typography>{ele.speciality}</Typography>
-              <Typography>{ele.name}</Typography>
-              <ButtonGroup
-                variant="text"
-                color="primary"
-                aria-label="text primary button group"
+              <Button
+                style={{
+                  color: "#fff",
+                  backgroundColor: "green",
+                  padding: "0 5px",
+                  borderRadius: "5px",
+                  fontSize: "0.7rem"
+                }}
+                variant="contained"
+                disabled
               >
-                <Button>Hotels</Button>
-                <Button>Cars</Button>
-                <Button>Flights</Button>
-              </ButtonGroup>
+                {ele.speciality}
+              </Button>
+
+              <Typography variant="h3" style={{ color: "#fff" }}>
+                {ele.name}
+              </Typography>
+              <Box
+                style={{
+                  display: "flex",
+                  textAlign: "center",
+                  alignItems: "center",
+                  justifyContent: "center"
+                }}
+              >
+                <Link to="/Hotels">Hotels</Link>
+
+                <FiberManualRecordIcon
+                  style={{ color: "#fff", width: "8px", margin: "5px" }}
+                />
+                <Link to="/Cars">Cars</Link>
+                <FiberManualRecordIcon
+                  style={{ color: "#fff", width: "8px", margin: "5px" }}
+                />
+                <Link to="/Flights">Flights</Link>
+              </Box>
             </Box>
           </Box>
         );
