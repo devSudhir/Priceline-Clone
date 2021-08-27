@@ -57,15 +57,28 @@ export const SearchSection = () => {
       {/* new section */}
       <Box
         className={style.absolutePositioningBox}
-        style={{ top: "5%", left: "8%" }}
+        style={{ top: "8%", left: "5%", width: "60%" }}
       >
-        <Paper elevation={3}>
-          <Typography variant="h4">Need a hotel or private rental?</Typography>
-          <Typography variant="h5">
+        <Paper
+          elevation={3}
+          style={{ padding: "20px 10px", backgroundColor: "#F4F6F8" }}
+        >
+          <Typography
+            variant="h4"
+            style={{ textAlign: "left", fontWeight: "600" }}
+          >
+            Need a hotel or private rental?
+          </Typography>
+          <Typography
+            variant="h5"
+            style={{ textAlign: "left", fontWeight: "400", marginTop: "5px" }}
+          >
             Book a room with free cancellation for more flexibility
           </Typography>
           <hr />
-          <ButtonGroup>
+          <ButtonGroup
+            style={{ display: "flex", justifyContent: "space-between" }}
+          >
             <Button className={style.buttonBorderNone}>HOTELS</Button>
             <Button className={style.buttonBorderNone}>FLIGHTS</Button>
             <Button className={style.buttonBorderNone}>BUNDLE + SAVE</Button>
@@ -74,45 +87,89 @@ export const SearchSection = () => {
           </ButtonGroup>
         </Paper>
         <CommonSearchBox />
-        <Paper>
-          <Box>
-            <Typography>
-              <MonetizationOnIcon />
-              Bundle + Save
-            </Typography>
+        <Paper
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            padding: "10px"
+          }}
+        >
+          <Box
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyItems: "center",
+              justifyContent: "space-between",
+              width: "50%",
+              backgroundColor: "#ECF7EC"
+            }}
+          >
+            <MonetizationOnIcon style={{ color: "green" }} />
+            <Typography style={{ color: "green" }}>Bundle + Save</Typography>
             <FormControlLabel
-              control={<Checkbox onChange={handleCheckedCar} color="primary" />}
+              control={
+                <Checkbox
+                  onChange={handleCheckedCar}
+                  color="primary"
+                  size="small"
+                />
+              }
               label="Add a car"
             />
             <FormControlLabel
               control={
-                <Checkbox onChange={handleCheckedFlight} color="primary" />
+                <Checkbox
+                  onChange={handleCheckedFlight}
+                  color="primary"
+                  size="small"
+                />
               }
               label="Add a flight"
             />
           </Box>
-          <Typography>
+          <Typography
+            style={{ fontSize: "0.8rem", width: "30%", textAlign: "left" }}
+          >
             Book a hotel with free cancellation for flexibility
           </Typography>
         </Paper>
 
-        <Paper>
-          <Link to="/trip">
+        <Paper
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "#ECF7EC",
+            textAlign: "center",
+            padding: "10px"
+          }}
+        >
+          <Link to="/trip" style={{ color: "#0068EF" }}>
             Planning a getaway? Save on nearby escapes
-            <ChevronRightIcon />
           </Link>
+          <ChevronRightIcon style={{ color: "#0068EF" }} />
         </Paper>
       </Box>
 
       {/* new section */}
 
-      <Box className={style.relativePositioningBox}>
+      <Box
+        className={style.relativePositioningBox}
+        style={{
+          margin: "10px 0 20px 30px",
+          paddingTop: "7px",
+          backgroundColor: "#0068EF",
+          width: "60%"
+        }}
+      >
         <Paper
           style={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "left",
-            textAlign: "center"
+            justifyItems: "center",
+            justifyContent: "space-between",
+            textAlign: "center",
+            padding: "20px"
           }}
         >
           <MapIcon style={{ color: "#0068EF", backgroundColor: "#E8F2FF" }} />
@@ -137,39 +194,54 @@ export const SearchSection = () => {
       </Box>
 
       {/* new section */}
-      <Typography style={{ textAlign: "left" }}>
+      <Typography
+        style={{ textAlign: "left", fontWeight: "500", marginLeft: "30px" }}
+      >
         Your Recent Searches
       </Typography>
-      <Box style={{ display: "flex" }}>
+      <Box style={{ display: "flex", marginLeft: "30px", padding: "10px" }}>
         <Paper
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            textAlign: "center"
+            textAlign: "center",
+            padding: "10px",
+            width: "30%",
+            marginRight: "10px"
           }}
         >
           <DomainIcon />
-          <Box>
-            <Typography>Pune,In</Typography>
-            <Typography>Wed, Aug 25 - Thu, Aug 26</Typography>
+          <Box style={{ textAlign: "left" }}>
+            <Typography style={{ fontWeight: "500" }}>Pune,In</Typography>
+            <Typography style={{ fontSize: "0.8rem" }}>
+              Wed, Aug 25 - Thu, Aug 26
+            </Typography>
           </Box>
-          <Link to="/Hotel">Search again</Link>
+          <Link to="/Hotel" style={{ fontSize: "0.8rem" }}>
+            Search again
+          </Link>
         </Paper>
         <Paper
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            textAlign: "center"
+            textAlign: "center",
+            width: "30%",
+            padding: "10px"
           }}
         >
           <DomainIcon />
-          <Box>
-            <Typography>Mumbai,In</Typography>
-            <Typography>Wed, Aug 25 - Thu, Aug 26</Typography>
+          <Box style={{ textAlign: "left" }}>
+            <Typography style={{ fontWeight: "500" }}>Mumbai,In</Typography>
+            <Typography style={{ fontSize: "0.8rem" }}>
+              Wed, Aug 25 - Thu, Aug 26
+            </Typography>
           </Box>
-          <Link to="/Hotel">Search again</Link>
+          <Link to="/Hotel" style={{ fontSize: "0.8rem" }}>
+            Search again
+          </Link>
         </Paper>
       </Box>
 
@@ -259,12 +331,12 @@ export const SearchSection = () => {
           style={{
             display: "flex",
             padding: "15px",
-            alignItems: "center",
+
             justifyContent: "space-between",
             width: "60%"
           }}
         >
-          <Box>
+          <Box style={{ textAlign: "left" }}>
             <Typography variant="h4" style={{ color: "#0068EF" }}>
               END OF SUMMER SALE
             </Typography>
@@ -287,10 +359,11 @@ export const SearchSection = () => {
           style={{
             display: "flex",
             backgroundColor: "#F4F6F8",
-            padding: "30px auto"
+            padding: "30px",
+            justifyContent: "space-between"
           }}
         >
-          <Box>
+          <Box style={{ width: "20%" }}>
             <VerifiedUserIcon style={{ color: "#0068EF" }} />
             <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
               FLEXIBLE BOOKINGS
@@ -300,7 +373,7 @@ export const SearchSection = () => {
               & rental cars.
             </Typography>
           </Box>
-          <Box>
+          <Box style={{ width: "20%" }}>
             <MonetizationOnIcon style={{ color: "#0068EF" }} />
             <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
               INCREDIBLE DEALS
@@ -310,7 +383,7 @@ export const SearchSection = () => {
               price.
             </Typography>
           </Box>
-          <Box>
+          <Box style={{ width: "20%" }}>
             <DirectionsCarIcon style={{ color: "#0068EF" }} />
             <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
               NO FLIGHT? NO PROBLEM
@@ -320,7 +393,7 @@ export const SearchSection = () => {
               airtime required.
             </Typography>
           </Box>
-          <Box>
+          <Box style={{ width: "20%" }}>
             <ContactSupportIcon style={{ color: "#0068EF" }} />
             <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
               HELP 24/7
