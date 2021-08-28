@@ -1,0 +1,334 @@
+
+
+/* .wrap{
+
+} */
+.amen_res{
+    max-width: 1216px;
+    margin: auto;
+
+    
+}
+.amen_flex{
+    display: flex;
+}
+
+.amen_flex_p{
+ 
+   width: 25%;
+}
+.amen_flex_pp{
+    margin-bottom: 30px;
+}
+.amen_flex_pp > h3{
+margin: 0px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.amen_elem{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.amen_elem > p{
+    margin: 0px;
+    margin-left: 8px;
+    align-items: center;
+   font-size: 14px;
+}
+.line{
+    border-width: 0px 0px 1px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-image: initial;
+    border-bottom-style: solid;
+    border-color: rgb(192, 202, 213);
+    background-color: rgb(192, 202, 213);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.amen_res1{
+    max-width: 1216px;
+    margin: auto;
+
+    
+}
+.amen_res1 > h2{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.para_cont{
+    display: flex;
+}
+.hotel_det{
+ width: 60%;
+}
+.hotel_all{
+    margin-top: 4px;
+    /* border: 1px solid; */
+   
+}
+.hotel_all > h3{
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: rgb(0, 24, 51);
+    margin-top: 0px;
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.para_txt{
+color: rgb(79, 111, 143);
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.ho_tim{
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+    /* border-bottom: 1px solid rgb(192, 202, 213); */
+    border-radius: 2px;
+}
+.ho_tim > h3{
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: rgb(0, 24, 51);
+    margin-top: 0px;
+        font-weight: 700;
+}
+
+.tim_data{
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 500; 
+}
+.tb{
+        font-size: 12px;
+        border-spacing: 2px;
+    border-color: grey;
+    width: 100%;
+}
+/* .tbdy{
+width: 100%;
+} */
+.one{
+    background-color: rgb(244, 246, 248);
+    /* width: 100%; */
+}
+.td_left{
+    margin: 0px;
+    /* padding: 8px; */
+        border-right: 2px solid rgb(255, 255, 255);
+        width: 14%;
+}
+.td_left > div{
+margin-right: 0px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+    padding: 4px;
+}
+.td_right{
+     margin: 0px;
+    /* padding: 8px; */
+        border-right: 2px solid rgb(255, 255, 255);
+}
+.td_right > div{
+    display: flex;
+    /* margin: 8px; */
+    width: 80%;
+    font-size: 12px;
+}
+.td_right > div > .tb_check{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.two > .td_left{
+border-right: 2px solid rgb(244, 246, 248);
+}
+.two > td_right{
+    border-right: 2px solid rgb(255, 255, 255);
+}
+.tb_txt{
+    font-size: 14px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+/* .infr{
+   border: 1px solid; 
+} */
+.infr > h3{
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: rgb(0, 24, 51);
+    margin-top: 0px;
+   
+    font-weight: 700;
+}
+.imp_info{
+color: rgb(79, 111, 143);
+    font-size: 14px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.map_res{
+    max-width: 1216px;
+    margin: auto;
+}
+.loc_det{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+}
+.loc_left{
+     display: flex;
+}
+.loc_logo{
+    margin-top: 4px;
+    margin-right: 8px;
+
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.loc_p > :nth-child(1){
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.loc_p > :nth-child(2){
+    font-size: 12px;
+    line-height: 18px;
+}
+.loc_right{
+ display: flex;
+}
+.img_map_loc{
+    width: 100%;
+    height: 480px;
+}
+.img_map_loc > img{
+     width: 100%;
+     height: 100%;
+}
+.last{
+    display: flex;
+
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    /* float: right; */
+    margin-top: 32px;
+    margin-bottom: 30px;
+     
+}
+.last > div > span{
+    color: rgb(79, 111, 143);
+    font-size: 12px;
+    /* text-align: right; */
+    align-items: center;
+     margin-right: 8px;
+     margin-top: 13px;
+}
+.suplog{
+color: rgb(0, 68, 153);
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.suplog > sup{
+    font-size: 14px;
+    margin-right: 3px;
+}
+.people{
+display: flex;
+    flex-wrap: nowrap;
+    width: 30%;
+    flex-direction: column;
+    /* border: 1px solid; */
+    padding: 20px;
+    margin-left: 30px;
+}
+.pe_rev{
+display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+.rev_top{
+    padding: 8px 8px 16px;
+    width: 100%;
+}
+.bttnn{
+      
+    font-size: 16px;
+    width: 40px;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgb(246, 128, 19);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    line-height: 1.5;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
+.rev_name{
+padding-left: 8px;
+    font-size: 20px;
+    font-weight: 800; 
+    margin-right: 50px; 
+    /* margin: 20px; */
+}
+.rev_dat{
+    margin-left: auto;
+    padding-left: 8px;
+    font-size: 12px;
+    align-items: center;
+    margin: 0px;
+}
+.r_t{
+    padding: 12px;
+    background-color: rgb(244, 246, 248);
+     margin-bottom: 20px;
+}
+.r_t > div > p{
+    color: rgb(0, 24, 51);
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.r_t > div > div{
+color: rgb(0, 24, 51);
+    font-size: 16px;
+
+    line-height: 1.571em;
+   
+}
+.pe_loc{
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}

@@ -1,0 +1,641 @@
+.nav{
+   width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 24, 51);
+    border-bottom: 1px solid rgb(192, 202, 213); 
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+}
+.nav_cont{
+max-width: 1216px;
+margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.btn_cont{
+margin-right: 4px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.hotel_info{
+    max-width: 1216px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid rgb(192,202,213);
+}
+.hotel_detail{
+    margin-bottom: 24px;
+    margin-top: 16px;
+
+}
+.hotel_contt{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+    /* border: 1px solid; */
+}
+.hotel_text{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: left;
+    width: 80%;
+    /* border: 1px solid; */
+}
+.hotel_star{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* border: 1px solid; */
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(0, 24, 51);
+    margin-right: 4px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.hotel_loc{
+    color: rgb(79, 111, 143);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    align-items: flex-start;
+    margin-top: 8px;
+    font-weight: 700;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+
+}
+.hotel_text > .per{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: rgb(204, 0, 0);
+    font-size: 10px;
+    font-weight: 600;
+    word-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    
+}
+.info_logo{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.info_logo > div{
+    display: flex;
+}
+.info_logo > div > button{
+border: 1px solid rgb(192, 202, 213);
+    margin-right: 8px;
+    border-radius: 2px;
+   
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 12px 5px 12px;
+font: 400 13.3333px Arial;
+
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+    cursor: pointer;
+   
+    -webkit-font-smoothing: inherit;
+    font-weight: 700;
+    color: rgb(0, 104, 239);
+    vertical-align: inherit;
+}
+
+.hotel_pri{
+    margin-left: 32px;
+    text-align: right;
+}
+.hotel_pri > div{
+    margin-top: unset;
+    margin-right: 0px;
+
+    position: relative;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.hotel_pri > div > span{
+color: rgb(0, 68, 153);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+}
+.hotel_pri > div > span > sup{
+padding-right: 2px;
+    bottom: 1.3ex;
+    font-weight: bold;
+
+    font-size: 20px;
+    line-height: 1;
+    vertical-align: baseline;
+
+    font-size: 20px;
+    line-height: 1;
+
+    position: relative;
+}
+.per{
+    margin-bottom: 12px;
+    margin-top: 0px;
+    white-space: nowrap;
+
+    color: rgb(79, 111, 143);
+    font-size: 14px;
+}
+
+.ho_feature{
+    max-width: 1216px;
+    margin-left: auto;
+    margin-right: auto
+}
+.feature_cont{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.feat_part{
+    margin-top: 32px;
+    padding-right: 32px;
+    border-right: 1px solid rgb(192, 202, 213);
+    margin-bottom: 32px;
+}
+.reason{
+ margin-bottom: 24px;
+}
+.reason > h2{
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+    
+}
+.gest{
+   margin-bottom: 16px;
+   
+}
+.in{
+    display: flex;
+    
+}
+.in_logo{
+   
+width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    flex-basis: 32px;
+    flex-shrink: 0;
+    
+}
+.in_logo > svg{
+    flex: 0 0 auto;
+    line-height: 1;
+    width: 20px;
+    color: rgb(246, 128, 19);
+}
+.in_txt{
+    margin-left: 8px;
+}
+.in_title{
+color: rgb(0, 24, 51);
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+}
+.in_p{
+    color: rgb(79, 111, 143);
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-top: 8px;
+}
+ .bttn {
+    margin-right: 8px;
+    padding: 3px;
+    width: 48px;
+    background-color: rgb(246, 128, 19);
+    color: rgb(255, 255, 255);
+    height: 28px;
+    border-radius: 2px;
+
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .rev{
+    display: flex;
+  }
+  .rev > h2{
+      margin: 0px;
+        font-size: 20px;
+  }
+  .feat_part2 {
+      margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-top: 0px;
+     border-right: 1px solid rgb(192, 202, 213);
+  }
+  /* .in_title1{
+color: rgb(0, 24, 51);
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+   
+} */
+.prog{
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+.re{
+    color: rgb(0, 24, 51);
+    margin-bottom: 4px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.feat_part3{
+    width: 30%;
+    padding-left: 32px;
+    border-top: none;
+    padding-top: 32px;
+    padding-bottom: 32px
+}
+.f3{
+    width: 100%;
+    display: flex;
+}
+.f3_content{
+width: 50%;
+ /* border: 1px solid; */
+ 
+}
+.f3_p1{
+    width: 100%;
+    /* border: 1px solid; */
+    padding-top: 8px;
+}
+.p1{
+margin-bottom: 24px;
+    padding-right: 24px;
+    display: flex;
+}
+.p1_log{
+width: 25%;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 8px;
+}
+.p1_log > img{
+    height: 100%;
+    width: 100%;
+     border-radius: 50%;
+}
+.p1_txt{
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-font-smoothing: inherit;
+    font-weight: 500;
+    color: rgb(0, 104, 239);
+    line-height: 1.4;
+width: 75%;
+    padding-left: 8px;
+   padding-top: 8px;
+    
+}
+.p1_log1{
+width: 25%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(237,240,243);
+    padding-top: 8px;
+}
+.p1_txt1{
+     font-family: inherit;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-font-smoothing: inherit;
+    font-weight: 500;
+  text-align: left;
+    line-height: 1.4;
+width: 70%;
+    padding-left: 8px;
+   padding-top: 8px;
+   margin-left: 10px;
+}
+
+
+
+.gest1{
+     margin-bottom: 16px;
+     text-align: left;
+}
+.gest1 > p{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 2px;
+    border-width: 0px;
+    border-style: solid;
+    font-size: 14px;
+    /* -webkit-font-smoothing: inherit; */
+    font-weight: 500;
+    color: rgb(0, 104, 239);
+    line-height: 1.4;
+    vertical-align: inherit;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.covid{
+margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 8px;
+    text-align: left;
+    background-color: rgb(255, 243, 192);
+    color: rgb(0, 24, 51);
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    text-align: center;
+   align-items: center;
+}
+.cov{
+    display: flex;
+   text-align: center; 
+    align-items: center; 
+}
+.cov > span{
+    margin-right: 5px;
+    font-size: 14px;
+}
+.co_wraper{
+    max-width: 1216px;
+        margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid; */
+}
+
+.room_wrap{
+   display: flex;
+    flex-direction: column;
+    padding: 0px;
+    justify-content: space-between;
+}
+.pr{
+ padding-top: 16px;
+    border-bottom: none;
+    outline: none;
+    display: flex;
+    
+    justify-content: space-between;
+    
+    padding-bottom: 8px;
+}
+.pr > h2{
+    color: rgb(79, 111, 143);
+   width: 100px;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+ /* .grant{
+    height: 100px; 
+   display: flex;
+}  */
+.grant > :nth-child(1){
+    color: rgb(0, 24, 51);
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.grant > :nth-child(2){
+    color: rgb(0, 24, 51);
+    margin-bottom: 0px;
+    font-size: 12px;
+    margin-left: 4px;
+    text-align: right;
+
+    line-height: 1.4;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+.rooms{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+
+    margin-top: 0px;
+    border-radius: 0px;
+    border-color: transparent transparent rgb(192, 202, 213);
+    /* border-bottom-width: 1px;
+    border-bottom-style: solid; */
+    box-shadow: none;
+
+    border-top: 1px solid rgb(192, 202, 213);
+}
+.room_det{
+width: 50%;
+/* border: 1px solid; */
+display: flex;
+text-align: left;
+}
+.room_btn{
+width: 50%;
+/* border: 1px solid; */
+}
+.room_img{
+    width: 30%;
+    border-radius: 5px;
+}
+.room_img > img{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+.room_inf{
+    width: 70%;
+        margin-top: 0px;
+
+    border: none;
+    box-shadow: none;
+    align-self: baseline;
+
+    margin: 0px 16px;
+    padding: 0px;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    /* border: 1px solid; */
+}
+.room_i > h3{
+margin: 0px;
+text-align: left;
+}
+.room_i > p{
+    margin-top: 8px;
+    color: rgb(79, 111, 143);
+    font-size: 12px;
+}
+.room_i > div{
+    line-height: 18px;
+
+    color: rgb(0, 16, 35);
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.wif{
+    margin-top: 16px;
+    display: flex;
+
+}
+.wif > div{
+    margin-bottom: 8px;
+    margin-right: 16px;
+    width: auto;
+    display: flex;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 170, 0);
+    /* text-align: center; */
+    margin-left: 5px ;
+}
+.room_p{
+    margin-top: 8px;
+    font-size: 14px;
+
+
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 2px;
+    border-width: 0px;
+    border-style: solid;
+    /* font-size: 14px; */
+    -webkit-font-smoothing: inherit;
+    font-weight: 500;
+    color: rgb(0, 104, 239);
+    line-height: 1.4;
+    vertical-align: inherit;
+    padding: 0px;
+    background-color: transparent;
+}
+.room_p > p{
+   
+    color: rgb(0, 104, 239);
+     font-size: 14px;
+}
+.room_btn{
+     height: 100%; 
+    
+}
+.room_btn_cont{
+    /* height: 80%; */
+    /* width: 100%;  */
+    /* border: 1px solid; */
+
+
+    height: 100px;
+    margin-top: 0px;
+     display: flex; 
+    /*flex-direction: column;
+    align-self: center;
+    border: 1px solid rgb(192, 202, 213); */
+
+    padding: 16px;
+
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 2px 0px, rgb(0 0 0 / 16%) 0px 1px 4px 0px;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 6px;
+}
+
+.room_btn_cont > div{
+    width: 50%;
+     display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* border: 1px solid rgb(192, 202, 213); */
+    text-align: left;
+}
+
+.room_btn_cont > :nth-child(1){
+    font-size: 14px;
+cursor: pointer;
+    text-decoration: none;
+    color: rgb(0, 104, 239);
+}
+
+
+.courosal{
+    background-color: rgb(244,246,248);
+    margin-bottom: 0px;
+}
+/* .p_locate{
+    margin-left: 32px;
+    text-align: right;
+    display: flex;
+}
+.p_locate > div{
+    margin-top: unset;
+    margin-right: 0px;
+
+    position: relative;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.p_locate > div > span{
+color: rgb(0, 68, 153);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+}
+.p_locate > div > span > sup{
+padding-right: 2px;
+    bottom: 1.3ex;
+    font-weight: bold;
+
+    font-size: 20px;
+    line-height: 1;
+    vertical-align: baseline;
+
+    font-size: 20px;
+    line-height: 1;
+
+    position: relative;
+} */
+
