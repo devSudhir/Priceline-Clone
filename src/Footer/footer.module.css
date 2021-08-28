@@ -1,0 +1,125 @@
+.outer_footer{
+    background-color:#f7f7f7 ;
+    color: #001832;
+    min-width: 320px;
+    padding: 0;
+    font: 14px/1.4 Arial,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.inner_footer{
+    padding: 48px 0;
+    max-width: 1280px;
+   
+    margin: 0 auto;
+    color: #001832;
+    font-family: Montserrat,"Arial Regular",sans-serif;
+    font: 14px/1.4 Arial,sans-serif;
+}
+/* .footer{
+        padding: 0 22px 40px;
+        margin: 0 5px;
+} */
+.footer_column{
+    width: 24%;
+    padding: 0;
+    vertical-align: top;
+    display: inline-block;
+    float: none;
+    text-align: left;
+}
+strong {
+vertical-align: top;
+    display: inline-block;
+    float: none;
+}
+.foot_cont{
+     padding: 0 0 20px;
+    margin: 0;
+     
+
+}
+.footer_ul{
+    list-style: none;
+    padding: 0 0 20px;
+    margin: 0;
+    width: 91.38%;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   
+}
+
+.footer_ul > li {
+    padding: 5px 0;
+    margin: 0;
+
+        display: list-item;
+    text-align: left;
+   
+}
+.footer_ul > li:hover{
+ cursor: pointer;
+ 
+}
+.footer_ul > li > span:hover{
+outline: 1px solid;
+}
+sup{
+    vertical-align: super;
+    font-size: smaller;
+    cursor: pointer;
+}
+.footer_p{
+color: #596b7d;
+padding: 0 23px;
+    margin: 0 5px;
+    font-size: 12px;
+    line-height: 1.3em;
+    text-align: center;
+    /* width: 80%; */
+}
+.footer_p span {
+    margin-top: 15px;
+}
+.bottom{
+background: #001832;
+    text-align: center;
+}
+.bottom_part{
+padding: 40px 0 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.bottom_p{
+margin: 0 20px 25px;
+    font-size: 14px;
+    color: #FFF;
+    text-align: center;
+}
+.bottom_logos{
+padding: 0;
+}
+.bottom_logos > li {
+    height: 22px;
+    width: 89px;
+    margin: 0 10px 20px;
+    display: inline-block;
+}
+.bottom_logos :nth-child(2){
+    width: 132px;
+}
+.bottom_logos :nth-child(3){
+width: 105px;
+}
+.bottom_logos :nth-child(4){
+width: 59px;
+}
+.bottom_logos :nth-child(5){
+width: 142px;
+}
+.bottom_logos :nth-child(6){
+    width: 125px;
+}
