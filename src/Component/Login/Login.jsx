@@ -43,11 +43,8 @@ export const Login = () => {
         ) : (
           ""
         )}
-        <Box>
-          <Button
-            variant="contained"
-            className={`${style.authContainer} ${style.googleAuthContainer}`}
-          >
+        <Box className={style.authContainer}>
+          <Button variant="contained" className={style.googleAuthContainer}>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"
               alt="google"
@@ -57,20 +54,14 @@ export const Login = () => {
               Sign in with Google
             </Typography>
           </Button>
-          <Button
-            variant="contained"
-            className={`${style.authContainer} ${style.facebookAuthContainer}`}
-          >
+          <Button variant="contained" className={style.facebookAuthContainer}>
             <FacebookIcon />
             <Typography className={style.authContainerTextPadding}>
               Sign in with Facebook
             </Typography>
           </Button>
 
-          <Button
-            variant="contained"
-            className={`${style.authContainer} ${style.appleAuthContainer}`}
-          >
+          <Button variant="contained" className={style.appleAuthContainer}>
             <AppleIcon />
             <Typography className={style.authContainerTextPadding}>
               Sign in with Apple
@@ -112,7 +103,7 @@ export const Login = () => {
                 Forgot your password?
               </Typography>
             )}
-            <Button variant="contained" className={style.signinButton}>
+            <Button variant="contained">
               {signinPage ? "Create Account" : "Sign in"}
             </Button>
           </form>
