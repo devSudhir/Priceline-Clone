@@ -61,7 +61,7 @@ export function PaymentCard() {
                     <p>1Room</p>
                 </div>
                 <div className="width30">
-                    {userRoom.price}
+                     ₹{userRoom.price}
                 </div>
             </div>
             <div className="flex">
@@ -77,7 +77,7 @@ export function PaymentCard() {
                  
                 </div>
                 <div className="width30">
-                    240
+                     ₹240
                 </div>
             </div>
             <div className="flex total">
@@ -85,7 +85,7 @@ export function PaymentCard() {
                  
                 </div>
                 <div className="width30">
-                    {userRoom.price + 240}
+                     ₹{userRoom.price + 240}
                 </div>
             </div>
             <Paper elevation={3} className="priceline">
