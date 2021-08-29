@@ -2,7 +2,7 @@
   "hotels":[
       {
           "img":"https://mobileimg.pclncdn.com/htlimg/master/279/0/1/27901505/master_27901505?opto=true&crop=261:261,offset-y100&auto=webp",
-                "location":"Mumbai North - Chhatrapati Sivaji Airpot",
+                 "location":"Banglore",
                 "title":"Taj Santacruz",
                 "description":["Free Internet","Free Wifi","Fitness Gym"],
                 "star": 5,
@@ -16,7 +16,7 @@
       },
       {
           "img":"https://mobileimg.pclncdn.com/htlimg/master/569/1/6/56916205/master_56916205?opto=true&crop=261:261,offset-y100&auto=webp",
-                "location":"Mumbai",
+                 "location":"Odisha",
                 "title":"Taj Lands End",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 4,
@@ -29,7 +29,7 @@
       },
       {
           "img":"https://image.shutterstock.com/image-illustration/hotel-sign-stars-3d-illustration-260nw-195879770.jpg",
-                "location":"Delhi",
+                "location":"Jharkhand",
                 "title":"Bawa International Hotel",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 4,
@@ -42,7 +42,7 @@
       },
       {
           "img":"https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg",
-                "location":"Uttar Pradesh",
+               "location":"Bhopal",
                 "title":"The St. Regis Mumbai",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star":5,
@@ -54,7 +54,7 @@
       },
       {
           "img":"https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?s=1024x768",
-                "location":"Kolkata",
+                "location":"Delhi",
                 "title":"JW Marriott Mumbai Sahar",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 5,
@@ -67,7 +67,7 @@
       },
       {
           "img":"https://media.cntraveler.com/photos/5b97ea9959ff057868b4ea22/master/pass/The-Peninsula-Bangkok_2018_The-Peninsula-Bangkok_The-Pool-11.jpg",
-                "location":"Jharkhand",
+                "location":"Uttar Pradesh",
                 "title":"FabExpress Marol Metro",
                 "description":["Breakfast included","Free Internet","Free Wifi","Free Parking"],
                 "star": 5,
@@ -148,7 +148,7 @@
       },
       {
           "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXT3MK4Gjd6Ae8T4WM8jy7gpEKegDpSqMxEFllXvkuGCgguLN3JzP7NWsP7NQV1jTYxlc&usqp=CAU",
-                "location":"Delhi",
+                "location":"New Delhi",
                 "title":"The St. Regis",
                 "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
                 "star": 5,
@@ -175,7 +175,7 @@
       },
        {
           "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSa-aMBfViL_fVA0VEyZZHQqLcvLAtoU9rCctz0430JGC8X9O_ld0s2C1COrCwqt5lTqY&usqp=CAU",
-                 "location":"Bhopal",
+                 "location":"Madhya Pradesh",
                 "title":"Punta Sal Suites",
                 "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
                 "star": 2,
@@ -189,7 +189,7 @@
 
        {
           "img":"https://images.moneycontrol.com/static-mcnews/2019/09/Samhi_Hotels-770x433.jpg?impolicy=website&width=770&height=431",
-                 "location":"Delhi",
+                 "location":"Gangatok",
                 "title":"JW Marriott",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 3.5,
@@ -203,7 +203,7 @@
 
        {
           "img":"https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg",
-                "location":"Bangalore",
+                "location":"Kerala",
                 "title":"Hotel Shalimar",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 5,
@@ -217,7 +217,7 @@
 
        {
           "img":"https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwaG90ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
-                "location":"Odisha",
+                "location":"Bhubaneshwar",
                 "title":"Hotel Konark",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 4.5,
@@ -231,7 +231,7 @@
 
        {
           "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7rpJgMTEPnUZHuezuGwABO0pk2jFlDRlbI60TNWIaLYXC7nUc3JWuqeW254TzkzKL0mo&usqp=CAU",
-                 "location":"Jharkhand",
+                 "location":"Ranchi",
                 "title":"Hotel Stella",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 5,
@@ -258,7 +258,7 @@
       },
        {
           "img":"https://media.radissonhotels.net/image/radisson-brand/guestroom/16256-115887-f64430522_3xl.jpg?impolicy=HomeHero",
-              "location":"Banglore",
+              "location":"Karnataka",
                 "title":"Hotel Radisson",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 4,
@@ -272,7 +272,7 @@
 
        {
           "img":"https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3883/x_0,y_0,w_5000,h_2812,c_crop,q_90,fl_progressive/w_600,h_337,f_auto,c_fit/the-orchid-hotel-mumbai-vile-parle/Lobby_2,_Orchid_Hotel_Mumbai_Vile_Parle,_5_Star_Hotel_in_Vile_Parle",
-                "location":"Odisha",
+                "location":"Lucknow",
                 "title":"Hotel Orchid",
                 "description":["Free Internet","Free Wifi","Free Parking"],
                 "star": 5,
