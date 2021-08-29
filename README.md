@@ -80,7 +80,7 @@ The library used for icon is:"https://material-ui.com/components/material-icons/
 
 Existing user can Login and new user's can SignUp themselves on page.
 From NavigationBar of Landing Page.
-<img src="./PreviewImageGallery/login.jpeg" width="500"/>
+![Screenshot (396)](https://user-images.githubusercontent.com/84707304/131241062-fbd5548c-f0ce-477a-82ee-7da33c35fb86.png)
 
 After Login user direcly redirect to home page.
 There are many Child pages linked to the Landing page and after login page, but for this clone following pages are made.
