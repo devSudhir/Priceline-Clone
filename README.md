@@ -85,13 +85,14 @@ From NavigationBar of Landing Page.
 After Login user direcly redirect to home page.
 There are many Child pages linked to the Landing page and after login page, but for this clone following pages are made.
 
-### Fundraiser form page :
+### Booking  page :
 
 Below images shows steps to donate.
 
 <p float="left">  
-  <img src="./PreviewImageGallery/steps.jpeg"  width="400"/> 
-  <img src="./PreviewImageGallery/donationForm.jpeg" width="400">
+ ![Screenshot (397)](https://user-images.githubusercontent.com/84707304/131241176-3a89785c-be5f-4483-8b05-c8375dd5ae3b.png)
+![Screenshot (399)](https://user-images.githubusercontent.com/84707304/131241180-e8fde881-1865-4c56-88f1-cfa67474ba05.png)
+![Screenshot (400)](https://user-images.githubusercontent.com/84707304/131241184-fca57d11-d9c8-4353-9ae1-82234520f632.png)
 </p>
 
 There are some Key Features which are added in website clone such as:
