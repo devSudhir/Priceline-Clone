@@ -31,10 +31,7 @@ function App() {
 
 
   
-      {/* <Switch>
-      <Route exact path="/"><Navbar></Navbar><Card></Card></Route>
-      <Route path="/form"><Navbar></Navbar> <Form></Form></Route>
-     </Switch> */}
+  
     
     </div>
   );
