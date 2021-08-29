@@ -71,7 +71,7 @@ Sliders are included in the page, popups are shown when hovered.
 At the bottom section there is a footer, both Header & Footer are same across all the pages.
 The page is responsive for all screen sizes.
 <br/>
-<img src="./PreviewImageGallery/index.jpeg" width="500"/>
+![Screenshot (401)](https://user-images.githubusercontent.com/84707304/131249970-0b2dffd3-03ba-453d-a822-72ef69181712.png)
 
 The library used for icon is:"https://material-ui.com/components/material-icons/"
 <br/>
@@ -101,24 +101,14 @@ There are some Key Features which are added in website clone such as:
 - _Supporters and Comments_
 - _Easy navigation by category section_
 
-<p>
-<img src="./PreviewImageGallery/chatbot.jpeg" width="400"/>
-<img src="./PreviewImageGallery/category.jpeg" width="400"/>
-<img src="./PreviewImageGallery/supporters.jpeg" width="400">
-<img src="./PreviewImageGallery/comments.jpeg" width="400"/>
-</p>
+![Screenshot (401)](https://user-images.githubusercontent.com/84707304/131250012-9794a36e-ab62-4fed-84c2-85645a1d3376.png)
+![Screenshot (397)](https://user-images.githubusercontent.com/84707304/131250015-a52b67a2-4136-4ea9-ab82-8b72d0f27c7f.png)
+![Screenshot (398)](https://user-images.githubusercontent.com/84707304/131250019-bc82cf76-fb1d-430f-ba6d-4d7b616349f9.png)
+![Screenshot (402)](https://user-images.githubusercontent.com/84707304/131250021-ab5a702f-27f3-4e84-98ac-73c379fa72d2.png)
 
-There are some redirected pages and sub features given below:
 
-### Other features and pages :
 
-<p float="left">
-  <img src="./PreviewImageGallery/patient.jpeg" width="600">
-  <img src="./PreviewImageGallery/successStory.jpeg" width="400"/>
-  <img src="./PreviewImageGallery/tools.jpeg"  width="400"/> 
-  <img src="./PreviewImageGallery/disease.jpeg"  width="400"/>
-  <img src="./PreviewImageGallery/footer.jpeg" width="400"/>
-</p>
+
 
 ## Team Members and Contributors
 
