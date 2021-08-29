@@ -10,11 +10,12 @@ import LocalParkingIcon from "@material-ui/icons/LocalParking";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import SpaIcon from "@material-ui/icons/Spa";
 import ErrorIcon from "@material-ui/icons/Error";
-
-import { useState } from "react";
+import { Link, useParams } from "react-router-dom"
+import { useState,useEffect } from "react";
 import CaurosalsPage from "../Caurosals/CourasalsPage";
 import Bottom, { BottomPart } from "../Bottom/Bottom";
-import Footer from "../../Footer/Footer";
+import { Footer } from "../../Footer/Footer";
+import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   btn: {
@@ -40,13 +41,31 @@ const useStyles = makeStyles((theme) => ({
    
      
   }
+
 }));
-export default function RoomPage() {
+export function RoomPage() {
   // const [color,setColor] = useState(false)
 
   // const changeColor = (){
   //     setColor(true)
   // }
+  const [room, setRoom] = useState([]);
+  const [card, setCard] = useState({})
+  const a=useParams()
+  useEffect(() => {
+    axios.get("http://localhost:3001/rooms").then(res => {
+       setRoom(res.data)
+    })
+    axios.get(`http://localhost:3001/hotels?id=${a.id}`).then((res) => {
+        setCard(res.data[0])
+      })
+      
+      .catch((e) => {
+      alert("data not loades")
+      })
+    
+  }, [])
+  console.log(room)
   const classes = useStyles();
   return (
     <div>
@@ -93,12 +112,12 @@ export default function RoomPage() {
         <div className={styles.hotel_detail}>
           <div className={styles.hotel_contt}>
             <div className={styles.hotel_text}>
-              <h1>Taj Santacruz</h1>
+              <h1>{card.title}</h1>
               <div className={styles.hotel_star}>
-                <span>5-STAR HOTEL</span>
+                <span>{card.star}-STAR HOTEL</span>
               </div>
               <div className={styles.hotel_loc}>
-                Mumbai North - Chhatrapati Shivaji International Airport ( BOM )
+               {card.location}
               </div>
               <p className={styles.per}>1 person is looking at this hotel</p>
               <div className={styles.info_logo}>
@@ -118,7 +137,7 @@ export default function RoomPage() {
             <div className={styles.hotel_pri}>
               <div>
                 <span>
-                  <sup>₹</sup>4749
+                  <sup>₹</sup>{card.price}
                 </span>
                 <div className={styles.per}>price per night</div>
               </div>
@@ -175,7 +194,7 @@ export default function RoomPage() {
             <div className={styles.feat_part2}>
               <div className={styles.reason}>
                 <div className={styles.rev}>
-                  <div className={styles.bttn}>8.8</div>
+                  <div className={styles.bttn}>{card.review}</div>
                   <h2>Guest Rating</h2>
                 </div>
               </div>
@@ -382,17 +401,19 @@ export default function RoomPage() {
         </div>
         
         {/* Rooms cards */}
-        <div className={styles.r_cont}>
+        
+        {room.map((el) => {
+         return  <div key={el.id} className={styles.r_cont}>
           <div className={styles.rooms}>
             <div className={styles.room_det}>
               <div className={styles.room_img}>
-                <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/113575113.jpg?k=28d5aebf3625fc31e61219dd16e875c1c8d45990f2687acb34d5d9c8a9783677&o=" alt="" />
+                <img src={el.img} alt="" />
               </div>
               <div className={styles.room_inf}>
                 <div className={styles.room_i}>
-                  <h3>Grand Suite</h3>
-                  <p>1572 sq ft</p>
-                  <div>1 Queen Bed   •   Sleeps up to 5</div>
+                   <h3>{ el.title}</h3>
+                   <p>{ el.area} Sft</p>
+                   <div>{ el.description}</div>
                   <div className={styles.wif}>
                     <div><span><WifiIcon /></span><span style={{marginTop:"5px",marginLeft:"1px"}}>Free WIfi</span></div>
                   {/* </div>
@@ -413,9 +434,9 @@ export default function RoomPage() {
                   <div className={styles.hotel_pri}>
                     <div style={{ display: "flex" }}>
                         <span style={{marginRight:"50px"}}>
-                  <sup>₹</sup>4749
+                  <sup>₹</sup>{el.price}
                       </span>
-                       <Button className={classes.sel} variant="contained">Book Now</Button>
+                       <Button className={classes.sel} value={el.id} variant="contained"> <Link to={`/users/${el.id}`} style={{color:"white",textDecoration:"none"}}>Book Now</Link></Button>
                     </div>
                    
                    </div>
@@ -427,7 +448,7 @@ export default function RoomPage() {
           </div>
         </div>
 
-
+        })} 
         <BottomPart/>
 
                

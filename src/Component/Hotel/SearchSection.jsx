@@ -45,7 +45,7 @@ export const SearchSection = () => {
     e.preventDefault();
   };
   return (
-    <Box>
+    <Box >
       <Box className={style.relativePositioningBox}>
         <img
           className={style.backGroundImage}
@@ -57,7 +57,7 @@ export const SearchSection = () => {
       {/* new section */}
       <Box
         className={style.absolutePositioningBox}
-        style={{ top: "8%", left: "5%", width: "60%" }}
+        style={{ top: "15%", left: "5%", width: "60%" }}
       >
         <Paper
           elevation={3}
@@ -632,7 +632,7 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Box>
+      <Box style={{width:"70vw" ,margin:"auto",textAlign:"center"}}>
         <Typography variant="h5" style={{ fontWeight: "500" }}>
           Maximize your savings with applying for the Priceline Rewards™ Visa®
           Card!

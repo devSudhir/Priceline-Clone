@@ -1,0 +1,343 @@
+{
+  "hotels":[
+      {
+          "img":"https://mobileimg.pclncdn.com/htlimg/master/279/0/1/27901505/master_27901505?opto=true&crop=261:261,offset-y100&auto=webp",
+                "location":"Mumbai North - Chhatrapati Sivaji Airpot",
+                "title":"Taj Santacruz",
+                "description":["Free Internet","Free Wifi","Fitness Gym"],
+                "star": 5,
+                "price":7495,
+                "total":"£480 total",
+                "review": 9.0,
+                "total_review": "121 Reviews",
+                "id":1
+                
+
+      },
+      {
+          "img":"https://mobileimg.pclncdn.com/htlimg/master/569/1/6/56916205/master_56916205?opto=true&crop=261:261,offset-y100&auto=webp",
+                "location":"Mumbai",
+                "title":"Taj Lands End",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 4,
+                "price":6750,
+                "total":"£480 total",
+                 "review": 8.8,
+                "total_review": "100 Reviews",
+                  "id":2
+
+      },
+      {
+          "img":"https://image.shutterstock.com/image-illustration/hotel-sign-stars-3d-illustration-260nw-195879770.jpg",
+                "location":"Delhi",
+                "title":"Bawa International Hotel",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 4,
+                "price":2880,
+                "total":"£480 total",
+                 "review": 7.8,
+                "total_review": "82 Reviews",
+                  "id":3
+
+      },
+      {
+          "img":"https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg",
+                "location":"Uttar Pradesh",
+                "title":"The St. Regis Mumbai",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star":5,
+                "price":6000,
+                "total":"£480 total",
+                 "review": 6.5,
+                "total_review": "50 Reviews",
+                  "id":4
+      },
+      {
+          "img":"https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?s=1024x768",
+                "location":"Kolkata",
+                "title":"JW Marriott Mumbai Sahar",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 5,
+                "price":5500,
+                "total":"£480 total",
+                 "review": 6.8,
+                "total_review": "80 Reviews",
+                  "id":5
+
+      },
+      {
+          "img":"https://media.cntraveler.com/photos/5b97ea9959ff057868b4ea22/master/pass/The-Peninsula-Bangkok_2018_The-Peninsula-Bangkok_The-Pool-11.jpg",
+                "location":"Jharkhand",
+                "title":"FabExpress Marol Metro",
+                "description":["Breakfast included","Free Internet","Free Wifi","Free Parking"],
+                "star": 5,
+                "price":10000,
+                "total":"£480 total",
+                "review": 8.9,
+                "total_review": "120 Reviews",
+                  "id":6
+      },
+
+       {
+          "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSid2xeJQ00ZrVjaGaK0mr0hriP5V5EQWFTDu42yv0sP7Zv0PefA1gJCUXQxNPa_ErpUuo&usqp=CAU",
+                "location":"Sikkim",
+                "title":"The Western Mumbai Garden",
+                "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
+                "star": 4,
+                "price":3290,
+                "total":"£480 total",
+                "review": 5.4,
+                "total_review": "40 Reviews",
+                  "id":7
+
+      },
+       {
+          "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4o8JpvuS9OehVCQbOQ_wkYhlKsq84jJEZXaMZ7MB8zmmrVvg3er5jcPKZH3M9KjhLzSk&usqp=CAU",
+                "location":"Punjab",
+                "title":"Hotel Plaza",
+                "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
+                "star": 3,
+                "price":3890,
+                "total":"£480 total",
+                "review": 4.3,
+                "total_review": "30 Reviews",
+                  "id":8
+
+      },
+
+       {
+          "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ85-LWeuSxYt-qLr-5DzNiYsAU-K4hKoGtIj2MfGb-mc50m8TGF1OyeqmZq-CHAUJ2M8E&usqp=CAU",
+                "location":"Mumbai-South",
+                "title":"The Classic",
+                "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
+                "star": 5,
+                "price":6700,
+                "total":"£480 total",
+                "review": 9.4,
+                "total_review": "180 Reviews",
+                  "id":9
+
+      },
+
+       {
+          "img":"http://magicofmiles.boardingarea.com/wp-content/uploads/2014/07/DSC00107-1024x768.jpg",
+                "location":"Mumbai-North",
+                "title":"The Taj",
+                "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
+                "star": 3,
+                "price":3490,
+                "total":"£480 total",
+                "review": 5.4,
+                "total_review": "41 Reviews",
+                  "id":10
+
+      },
+
+       {
+          "img":"https://s7d2.scene7.com/is/image/ritzcarlton/yyzrz-lounge-50665681?$XlargeViewport100pct$",
+                "location":"Mumbai-North",
+                "title":"The Classic Hotel",
+                "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
+                "star": 4,
+                "price":5490,
+                "total":"£480 total",
+                "review": 6.4,
+                "total_review": "38 Reviews",
+                  "id":11
+
+      },
+      {
+          "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXT3MK4Gjd6Ae8T4WM8jy7gpEKegDpSqMxEFllXvkuGCgguLN3JzP7NWsP7NQV1jTYxlc&usqp=CAU",
+                "location":"Delhi",
+                "title":"The St. Regis",
+                "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
+                "star": 5,
+                "price":6490,
+                "total":"£480 total",
+                "review": 9.7,
+                "total_review": "150 Reviews",
+                  "id":12
+
+      },
+
+       {
+          "img":"https://cf.bstatic.com/xdata/images/hotel/max500/257341037.jpg?k=9d91bc6c05f87d2e53210a4b6b34c9805a73cad2af3e0fd578c950d4b3556355&o=&hp=1",
+                "location":"Goa",
+                "title":"Hilton Resort",
+                "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
+                "star": 3,
+                "price":4490,
+                "total":"£480 total",
+                "review": 2.7,
+                "total_review": "50 Reviews",
+                  "id":13
+
+      },
+       {
+          "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSa-aMBfViL_fVA0VEyZZHQqLcvLAtoU9rCctz0430JGC8X9O_ld0s2C1COrCwqt5lTqY&usqp=CAU",
+                 "location":"Bhopal",
+                "title":"Punta Sal Suites",
+                "description":["Breakfast Included","Free Internet","Free Wifi","Free Parking"],
+                "star": 2,
+                "price":2540,
+                "total":"£480 total",
+                "review": 2.7,
+                "total_review": "40 Reviews",
+                  "id":14
+
+      },
+
+       {
+          "img":"https://images.moneycontrol.com/static-mcnews/2019/09/Samhi_Hotels-770x433.jpg?impolicy=website&width=770&height=431",
+                 "location":"Delhi",
+                "title":"JW Marriott",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 3.5,
+                "price":6000,
+                "total":"£480 total",
+                "review": 2,
+                "total_review": "20 Reviews",
+                  "id":15
+
+      },
+
+       {
+          "img":"https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg",
+                "location":"Bangalore",
+                "title":"Hotel Shalimar",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 5,
+                "price":15000,
+                "total":"£480 total",
+                "review": 5,
+                "total_review": "220 Reviews", 
+                  "id":16
+
+      },
+
+       {
+          "img":"https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwaG90ZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+                "location":"Odisha",
+                "title":"Hotel Konark",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 4.5,
+                "price":4520,
+                "total":"£480 total",
+                "review": 7.5,
+                "total_review": "90 Reviews",
+                  "id":17
+
+      },
+
+       {
+          "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7rpJgMTEPnUZHuezuGwABO0pk2jFlDRlbI60TNWIaLYXC7nUc3JWuqeW254TzkzKL0mo&usqp=CAU",
+                 "location":"Jharkhand",
+                "title":"Hotel Stella",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 5,
+                "price":7820,
+                "total":"£480 total",
+                "review": 8.2,
+                "total_review": "210 Reviews",
+                  "id":18
+
+      },
+
+       {
+          "img":"https://pix10.agoda.net/hotelImages/108309/-1/c47b2b78eb89d6d1ace0628de0e041bc.jpg?s=1024x768",
+                "location":"Jamshedpur",
+                "title":"The Park",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 3,
+                "price":6620,
+                "total":"£480 total",
+                "review": 7,
+                "total_review": "130 Reviews",
+                  "id":19
+
+      },
+       {
+          "img":"https://media.radissonhotels.net/image/radisson-brand/guestroom/16256-115887-f64430522_3xl.jpg?impolicy=HomeHero",
+              "location":"Banglore",
+                "title":"Hotel Radisson",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 4,
+                "price":7777,
+                "total":"£480 total",
+                "review": 8.1,
+                "total_review": "70 Reviews",
+                  "id":20
+
+      },
+
+       {
+          "img":"https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3883/x_0,y_0,w_5000,h_2812,c_crop,q_90,fl_progressive/w_600,h_337,f_auto,c_fit/the-orchid-hotel-mumbai-vile-parle/Lobby_2,_Orchid_Hotel_Mumbai_Vile_Parle,_5_Star_Hotel_in_Vile_Parle",
+                "location":"Odisha",
+                "title":"Hotel Orchid",
+                "description":["Free Internet","Free Wifi","Free Parking"],
+                "star": 5,
+                "price":9877,
+                "total":"£480 total",
+                "review": 8,
+                "total_review": "170 Reviews",
+                  "id":21
+
+      }
+
+
+  ],
+  "rooms":[
+      {
+            "img":"https://q-xx.bstatic.com/xdata/images/hotel/max500/113575113.jpg?k=28d5aebf3625fc31e61219dd16e875c1c8d45990f2687acb34d5d9c8a9783677&o=",
+            "title":"Grand Suite",
+            "area": 1572,
+            "description":"1 King Bed · Sleeps up to 4",
+            "id":1,
+            "price":9877,
+            "location":"Banglore"
+            
+      },
+      {
+            "img":"https://q-xx.bstatic.com/xdata/images/hotel/max500/167211943.jpg?k=2887a0a2c13dc2eb831a94da5175e05221ef92e36acdb4d0ef185246c5da8e70&o=",
+            "title":"Luxury King Room",
+            "area": 572,
+            "description":"1 Queen Bed · Sleeps up to 4",
+            "id":2,
+              "price":7645,
+              "location":"Odisha"
+            
+      },
+      {
+            "img":"https://q-xx.bstatic.com/xdata/images/hotel/max500/113575115.jpg?k=d509398f8da8a0c7a184b2c472568933c61db109c8e6bd1a929607e4d45abba3&o=",
+            "title":"Club King Room",
+            "area": 582,
+            "description":"1 King Bed · Sleeps up to 5",
+            "id":3,
+              "price":6543,
+             "location":"Jharkhand"
+            
+      },
+      {
+            "img":"https://q-xx.bstatic.com/xdata/images/hotel/max500/56663946.jpg?k=48dc9208d212cd909ddb709ac5cfae4624f951a750b67b1053117fba757afd1a&o=",
+            "title":"Luxury Facade View Room",
+            "area": 485,
+            "description":"1 King Bed · Sleeps up to 4",
+            "id":4,
+            "price":7845,
+            "location":"Bhopal"
+            
+      },
+      {
+            "img":"https://q-xx.bstatic.com/xdata/images/hotel/max500/113575115.jpg?k=d509398f8da8a0c7a184b2c472568933c61db109c8e6bd1a929607e4d45abba3&o=",
+            "title":"Presidential Suite",
+            "area": 5199,
+            "description":"1 King Bed and 1 Sofa Bed · Sleeps up to 5",
+            "id":5,
+            "price":5421,
+            "location":"Delhi"
+            
+      }
+
+  ]
+
+}

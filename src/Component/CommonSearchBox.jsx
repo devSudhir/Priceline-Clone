@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import { useState } from "react";
 import style from "./Hotel/SearchSection.module.css";
 import Grid from "@material-ui/core/Grid";
+import { Link } from "react-router-dom";
 export const CommonSearchBox = () => {
   const [adults, setAdults] = useState(2);
   const [rooms, setRooms] = useState(1);
@@ -144,7 +145,7 @@ export const CommonSearchBox = () => {
             color="primary"
             style={{ backgroundColor: "#0068EF", padding: "10px 30px" }}
           >
-            FIND YOUR HOTEL
+            <Link to="/Hotels" style={{color:"white",textDecoration:"none"}}>FIND YOUR HOTEL</Link>
           </Button>
         </Box>
       </form>
