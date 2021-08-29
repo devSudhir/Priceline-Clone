@@ -13,11 +13,78 @@ import { useState } from "react";
 export const Login = () => {
   const [signinPage, setSigninPage] = useState(false);
   const [openLoginModal, setOpenLoginModal] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [cpassword, setcPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [verifiedUser, setVerifiedUser] = useState("");
   const handleOpen = () => {
     setOpenLoginModal(true);
   };
   const handleClose = () => {
     setOpenLoginModal(false);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("hi");
+    let users = JSON.parse(localStorage.getItem("userDetailsPriceline"));
+
+    if (users === null) {
+      users = [];
+    }
+    console.log(users);
+    if (signinPage) {
+      console.log("create");
+      if (password !== cpassword) {
+        alert("Please Enter Password Correctly!");
+        return;
+      }
+      const payload = {
+        firstName,
+        lastName,
+        email,
+        password,
+        cpassword
+      };
+
+      users.push(payload);
+      localStorage.setItem("userDetailsPriceline", JSON.stringify(users));
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPassword("");
+      setcPassword("");
+    } else {
+      console.log("signin");
+      const payload = {
+        email,
+        password
+      };
+
+      console.log(payload);
+      let found = false;
+      for (let i = 0; i < users.length; i++) {
+        if (
+          users[i].email === payload.email &&
+          users[i].password === payload.password
+        ) {
+          console.log("found");
+          setVerifiedUser(users[i].firstName);
+          found = true;
+          break;
+        }
+      }
+      if (found) {
+        console.log("verified user");
+
+        setOpenLoginModal(false);
+      } else {
+        console.log("Invalid credentials");
+      }
+      setEmail("");
+      setPassword("");
+    }
   };
   const body = (
     <Paper className={style.mainBox}>
@@ -76,22 +143,41 @@ export const Login = () => {
           <hr className={style.hrline} />
         </Box>
         <Box>
-          <form className={style.inputForm}>
+          <form className={style.inputForm} onSubmit={handleSubmit}>
             {signinPage ? (
               <>
-                <TextField label="Enter First Name" variant="outlined" />
-                <TextField label="Last Name" variant="outlined" />
+                <TextField
+                  label="Enter First Name"
+                  variant="outlined"
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
+                <TextField
+                  label="Last Name"
+                  variant="outlined"
+                  onChange={(e) => setLastName(e.target.value)}
+                />
               </>
             ) : (
               ""
             )}
-            <TextField type="email" label="Email Address" variant="outlined" />
-            <TextField type="password" label="Password" variant="outlined" />
+            <TextField
+              type="email"
+              label="Email Address"
+              variant="outlined"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <TextField
+              type="password"
+              label="Password"
+              variant="outlined"
+              onChange={(e) => setPassword(e.target.value)}
+            />
             {signinPage ? (
               <TextField
                 type="password"
                 label="Confirm Password"
                 variant="outlined"
+                onChange={(e) => setcPassword(e.target.value)}
               />
             ) : (
               ""
@@ -103,7 +189,7 @@ export const Login = () => {
                 Forgot your password?
               </Typography>
             )}
-            <Button variant="contained">
+            <Button variant="contained" type="submit">
               {signinPage ? "Create Account" : "Sign in"}
             </Button>
           </form>
@@ -135,7 +221,7 @@ export const Login = () => {
   return (
     <Box>
       <button type="button" onClick={handleOpen}>
-        Open Modal
+        {verifiedUser ? `Hi,${verifiedUser}` : "SignIn"}
       </button>
       <Modal
         open={openLoginModal}
