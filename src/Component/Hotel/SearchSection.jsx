@@ -45,7 +45,7 @@ export const SearchSection = () => {
     e.preventDefault();
   };
   return (
-    <Box >
+    <Box className={style.homeBox}>
       <Box className={style.relativePositioningBox}>
         <img
           className={style.backGroundImage}
@@ -55,30 +55,19 @@ export const SearchSection = () => {
       </Box>
 
       {/* new section */}
-      <Box
-        className={style.absolutePositioningBox}
-        style={{ top: "15%", left: "5%", width: "60%" }}
-      >
-        <Paper
-          elevation={3}
-          style={{ padding: "20px 10px", backgroundColor: "#F4F6F8" }}
-        >
-          <Typography
-            variant="h4"
-            style={{ textAlign: "left", fontWeight: "600" }}
-          >
+      <Box className={style.absolutePositioningBox}>
+        <Paper elevation={3} className={style.homeBannerSearchBox}>
+          <Typography variant="h4" className={style.homeBannerSearchBoxHeading}>
             Need a hotel or private rental?
           </Typography>
           <Typography
             variant="h5"
-            style={{ textAlign: "left", fontWeight: "400", marginTop: "5px" }}
+            className={style.homeBannerSearchBoxSubHeading}
           >
             Book a room with free cancellation for more flexibility
           </Typography>
           <hr />
-          <ButtonGroup
-            style={{ display: "flex", justifyContent: "space-between" }}
-          >
+          <ButtonGroup className={style.homeBannerSearchBoxButtonGroup}>
             <Button className={style.buttonBorderNone}>HOTELS</Button>
             <Button className={style.buttonBorderNone}>FLIGHTS</Button>
             <Button className={style.buttonBorderNone}>BUNDLE + SAVE</Button>
@@ -87,25 +76,10 @@ export const SearchSection = () => {
           </ButtonGroup>
         </Paper>
         <CommonSearchBox />
-        <Paper
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            padding: "10px"
-          }}
-        >
-          <Box
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyItems: "center",
-              justifyContent: "space-between",
-              width: "50%",
-              backgroundColor: "#ECF7EC"
-            }}
-          >
-            <MonetizationOnIcon style={{ color: "green" }} />
-            <Typography style={{ color: "green" }}>Bundle + Save</Typography>
+        <Paper className={style.homeBannerSearchBoxBundleLayout}>
+          <Box className={style.homeBannerSearchBoxBundleOffer}>
+            <MonetizationOnIcon className={style.colorGreen} />
+            <Typography className={style.colorGreen}>Bundle + Save</Typography>
             <FormControlLabel
               control={
                 <Checkbox
@@ -127,54 +101,26 @@ export const SearchSection = () => {
               label="Add a flight"
             />
           </Box>
-          <Typography
-            style={{ fontSize: "0.8rem", width: "30%", textAlign: "left" }}
-          >
+          <Typography className={style.homeBannerSearchBoxSmallText}>
             Book a hotel with free cancellation for flexibility
           </Typography>
         </Paper>
 
-        <Paper
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#ECF7EC",
-            textAlign: "center",
-            padding: "10px"
-          }}
-        >
-          <Link to="/trip" style={{ color: "#0068EF" }}>
+        <Paper className={style.homeBannerSearchBoxLastSection}>
+          <Link to="/trip" className={style.themeColor}>
             Planning a getaway? Save on nearby escapes
           </Link>
-          <ChevronRightIcon style={{ color: "#0068EF" }} />
+          <ChevronRightIcon className={style.themeColor} />
         </Paper>
       </Box>
 
       {/* new section */}
 
-      <Box
-        className={style.relativePositioningBox}
-        style={{
-          margin: "10px 0 20px 30px",
-          paddingTop: "7px",
-          backgroundColor: "#0068EF",
-          width: "60%"
-        }}
-      >
-        <Paper
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyItems: "center",
-            justifyContent: "space-between",
-            textAlign: "center",
-            padding: "20px"
-          }}
-        >
-          <MapIcon style={{ color: "#0068EF", backgroundColor: "#E8F2FF" }} />
+      <Box className={style.mapTripBox}>
+        <Paper className={style.mapTripBoxFlexItem}>
+          <MapIcon className={style.mapTripBoxMapIcon} />
           <Box>
-            <Typography style={{ color: "#0068EF" }}>
+            <Typography className={style.themeColor}>
               Looking for your trip details?
             </Typography>
             <Typography>
@@ -194,52 +140,35 @@ export const SearchSection = () => {
       </Box>
 
       {/* new section */}
-      <Typography
-        style={{ textAlign: "left", fontWeight: "500", marginLeft: "30px" }}
-      >
+      <Typography className={style.recentSearchesText}>
         Your Recent Searches
       </Typography>
-      <Box style={{ display: "flex", marginLeft: "30px", padding: "10px" }}>
-        <Paper
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            textAlign: "center",
-            padding: "10px",
-            width: "30%",
-            marginRight: "10px"
-          }}
-        >
+      <Box className={style.recentSearchesBox}>
+        <Paper className={style.recentSearchesBoxFlexItem}>
           <DomainIcon />
-          <Box style={{ textAlign: "left" }}>
-            <Typography style={{ fontWeight: "500" }}>Pune,In</Typography>
-            <Typography style={{ fontSize: "0.8rem" }}>
+          <Box className={style.textAlignLeft}>
+            <Typography className={style.recentSearchesBoxfontWeight500}>
+              Pune,In
+            </Typography>
+            <Typography className={style.recentSearchesBoxfontSize}>
               Wed, Aug 25 - Thu, Aug 26
             </Typography>
           </Box>
-          <Link to="/Hotel" style={{ fontSize: "0.8rem" }}>
+          <Link to="/Hotel" className={style.recentSearchesBoxfontSize}>
             Search again
           </Link>
         </Paper>
-        <Paper
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            textAlign: "center",
-            width: "30%",
-            padding: "10px"
-          }}
-        >
+        <Paper className={style.recentSearchesBoxFlexItem}>
           <DomainIcon />
-          <Box style={{ textAlign: "left" }}>
-            <Typography style={{ fontWeight: "500" }}>Mumbai,In</Typography>
-            <Typography style={{ fontSize: "0.8rem" }}>
+          <Box className={style.textAlignLeft}>
+            <Typography className={style.recentSearchesBoxfontWeight500}>
+              Mumbai,In
+            </Typography>
+            <Typography className={style.recentSearchesBoxfontSize}>
               Wed, Aug 25 - Thu, Aug 26
             </Typography>
           </Box>
-          <Link to="/Hotel" style={{ fontSize: "0.8rem" }}>
+          <Link to="/Hotel" className={style.recentSearchesBoxfontSize}>
             Search again
           </Link>
         </Paper>
@@ -247,33 +176,22 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Box style={{ display: "flex", padding: "30px", maxWidth: "100vw" }}>
+      <Box className={style.priceBreakerBox}>
         <Badge
           anchorOrigin={{
             vertical: "top",
-            horizontal: "left"
+            horizontal: "left",
           }}
           badgeContent="NEW"
-          style={{ backgroundColor: "red", width: "60%" }}
+          className={style.BadgeBox}
         >
-          <Paper style={{}}>
-            <Box
-              style={{
-                display: "flex",
-                padding: "15px",
-                alignItems: "center",
-                justifyContent: "space-between"
-              }}
-            >
-              <Box
-                style={{
-                  display: "flex"
-                }}
-              >
-                <Typography variant="h4" style={{ marginRight: "10px" }}>
+          <Paper>
+            <Box className={style.priceBreakerBoxHeading}>
+              <Box className={style.displayFlex}>
+                <Typography variant="h4" className={style.marginRight10px}>
                   Introducing{" "}
                 </Typography>
-                <Typography variant="h4" style={{ color: "#0068EF" }}>
+                <Typography variant="h4" className={style.themeColor}>
                   Pricebreakers
                 </Typography>
               </Box>
@@ -283,7 +201,7 @@ export const SearchSection = () => {
                 style={{
                   backgroundColor: "#EDF0F3",
                   color: "#0068EF",
-                  padding: "10px 15px"
+                  padding: "10px 15px",
                 }}
               >
                 Search Pricebreakers
@@ -298,7 +216,7 @@ export const SearchSection = () => {
               </Modal>
             </Box>
 
-            <Box style={{ display: "flex", padding: "15px", width: "90%" }}>
+            <Box className={style.priceBreakerSpecBox}>
               <Box>
                 <img
                   src="https://assets.pclncdn.com/web/next-landing/bc028b7/_next/static/images/One-635a492d0b64f53be39e1cab9c120f89.svg"
@@ -327,17 +245,9 @@ export const SearchSection = () => {
             </Box>
           </Paper>
         </Badge>
-        <Paper
-          style={{
-            display: "flex",
-            padding: "15px",
-
-            justifyContent: "space-between",
-            width: "60%"
-          }}
-        >
-          <Box style={{ textAlign: "left" }}>
-            <Typography variant="h4" style={{ color: "#0068EF" }}>
+        <Paper className={style.priceBreakerImageBox}>
+          <Box className={style.textAlignLeft}>
+            <Typography variant="h4" className={style.themeColor}>
               END OF SUMMER SALE
             </Typography>
 
@@ -345,7 +255,6 @@ export const SearchSection = () => {
             <Typography>Travel anytime.</Typography>
           </Box>
           <img
-            style={{ width: "50%" }}
             src="https://images.ctfassets.net/sdx4pteldsvw/5NorD2qReoA0wA3ZkuBQcs/7ab0781f770a23bef75e8ce36c4e6869/Right_promo_box.jpg?w=330&h=448&f=center&fit=fill"
             alt=""
           />
@@ -354,18 +263,11 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Box style={{ padding: "15px", backgroundColor: "#F4F6F8" }}>
-        <Paper
-          style={{
-            display: "flex",
-            backgroundColor: "#F4F6F8",
-            padding: "30px",
-            justifyContent: "space-between"
-          }}
-        >
-          <Box style={{ width: "20%" }}>
-            <VerifiedUserIcon style={{ color: "#0068EF" }} />
-            <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+      <Box className={style.supportBox}>
+        <Paper className={style.supportBoxContainer}>
+          <Box className={style.supportBoxContainerItems}>
+            <VerifiedUserIcon className={style.themeColor} />
+            <Typography className={style.supportBoxContainerText}>
               FLEXIBLE BOOKINGS
             </Typography>
             <Typography variant="button">
@@ -373,9 +275,9 @@ export const SearchSection = () => {
               & rental cars.
             </Typography>
           </Box>
-          <Box style={{ width: "20%" }}>
-            <MonetizationOnIcon style={{ color: "#0068EF" }} />
-            <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+          <Box className={style.supportBoxContainerItems}>
+            <MonetizationOnIcon className={style.themeColor} />
+            <Typography className={style.supportBoxContainer}>
               INCREDIBLE DEALS
             </Typography>
             <Typography variant="button">
@@ -383,9 +285,9 @@ export const SearchSection = () => {
               price.
             </Typography>
           </Box>
-          <Box style={{ width: "20%" }}>
-            <DirectionsCarIcon style={{ color: "#0068EF" }} />
-            <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+          <Box className={style.supportBoxContainerItems}>
+            <DirectionsCarIcon className={style.themeColor} />
+            <Typography className={style.supportBoxContainerText}>
               NO FLIGHT? NO PROBLEM
             </Typography>
             <Typography variant="button">
@@ -393,9 +295,9 @@ export const SearchSection = () => {
               airtime required.
             </Typography>
           </Box>
-          <Box style={{ width: "20%" }}>
-            <ContactSupportIcon style={{ color: "#0068EF" }} />
-            <Typography style={{ fontSize: "1rem", fontWeight: "600" }}>
+          <Box className={style.supportBoxContainerItems}>
+            <ContactSupportIcon className={style.themeColor} />
+            <Typography className={style.supportBoxContainerText}>
               HELP 24/7
             </Typography>
             <Typography variant="button">
@@ -407,32 +309,24 @@ export const SearchSection = () => {
       </Box>
 
       {/* new section */}
-      <Box style={{ textAlign: "left" }}>
-        <Paper
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "30px",
-            backgroundColor: "#F4F6F8"
-          }}
-        >
-          <Box style={{ width: "50%" }}>
+      <Box className={style.textAlignLeft}>
+        <Paper className={style.discountBox}>
+          <Box className={style.discountTextBoxSize}>
             <Typography
               variant="button"
               display="block"
-              style={{ color: "#4f6f9D", marginBottom: "10px" }}
+              className={style.discountBoxthemeHeading}
             >
               SIGN UP & SAVE!
             </Typography>
             <Typography
               variant="h4"
               display="block"
-              style={{ fontWeight: "500", marginBottom: "30px" }}
+              className={style.discountBoxHeading}
             >
               Save 10% On Your Next Trip!
             </Typography>
-            <Typography style={{ fontSize: "1.4rem", color: "#4f6f9D" }}>
+            <Typography className={style.discountBoxSubHeading}>
               Unlock exclusive coupons, early access to sales and more when you
               sign up for Priceline emails.
             </Typography>
@@ -446,7 +340,7 @@ export const SearchSection = () => {
             </Button>
           </Box>
           <img
-            style={{ width: "40%" }}
+            className={style.imageWidth40}
             src="https://images.ctfassets.net/sdx4pteldsvw/3MCmiZ7pAMjXK5eJcaGVx4/84c6956ee935728b5c7ffde820b8e42b/marketing-tout.jpeg?h=600&q=70"
             alt=""
           />
@@ -455,46 +349,32 @@ export const SearchSection = () => {
       {/* new section */}
 
       <Box>
-        <Paper
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "20px",
-            backgroundColor: "#F4F6F8"
-          }}
-        >
-          <Box style={{ textAlign: "left" }}>
+        <Paper className={style.discountBox}>
+          <Box className={style.textAlignLeft}>
             <Typography
               variant="button"
               display="block"
-              style={{ color: "#4f6f9D", marginBottom: "10px" }}
+              className={style.discountBoxthemeHeading}
             >
               SAVINGS ON THE GO
             </Typography>
             <Typography
               variant="h4"
               display="block"
-              style={{ fontWeight: "500", marginBottom: "30px" }}
+              className={style.discountBoxHeading}
             >
               Exclusive Tonight Only Deals. Only in the App.
             </Typography>
-            <Typography style={{ fontSize: "1.4rem", color: "#4f6f9D" }}>
+            <Typography className={style.discountBoxSubHeading}>
               Discover hotel, flight and rental car deals exclusively in the
               app. Download today to stay connected with important trip details
               — anytime, anywhere.
             </Typography>
             <Box>
-              <Box
-                style={{
-                  display: "flex",
-                  justifyItems: "center",
-                  alignItems: "center"
-                }}
-              >
+              <Box className={style.smartPhoneBox}>
                 <SmartphoneIcon />
                 <TextField
-                  style={{ border: "none" }}
+                  className={style.buttonBorderNone}
                   label="Enter your phone number"
                   variant="outlined"
                 />
@@ -504,7 +384,7 @@ export const SearchSection = () => {
                   style={{
                     backgroundColor: "#0068EF",
                     padding: "10px 40px",
-                    marginLeft: "10px"
+                    marginLeft: "10px",
                   }}
                 >
                   Send Link
@@ -513,7 +393,7 @@ export const SearchSection = () => {
             </Box>
           </Box>
           <img
-            style={{ width: "30%" }}
+            className={style.imageWidth30}
             src="https://s1.pclncdn.com/design-assets/brand-assets/Priceline-App-devices.jpg"
             alt=""
           />
@@ -521,28 +401,19 @@ export const SearchSection = () => {
       </Box>
 
       {/* new section */}
-      <Box style={{ width: "100vw", padding: "15px", margin: "auto" }}>
-        <Paper
-          style={{
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "auto",
-            textAlign: "center"
-          }}
-        >
-          <Box style={{ marginRight: "20px", padding: "20px" }}>
-            <Typography variant="h6" style={{ fontWeight: "600" }}>
+      <Box className={style.sendmailBox}>
+        <Paper className={style.mailPaper}>
+          <Box className={style.mailTextBoxmarginPadding}>
+            <Typography variant="h6" className={style.fontWeight600}>
               Sign up for Exclusive Email-only Coupons
             </Typography>
-            <Typography style={{ fontWeight: "500" }}>
+            <Typography className={style.fontWeight500}>
               Exclusive access to coupons, special offers and promotions.
             </Typography>
           </Box>
           <Box>
             <TextField
-              style={{ marginRight: "10px" }}
+              className={style.marginRight10}
               label="example@address.com"
               variant="outlined"
             />
@@ -552,7 +423,7 @@ export const SearchSection = () => {
               style={{
                 padding: "13px",
                 color: "#0068EF",
-                border: " 2px solid #0068EF"
+                border: " 2px solid #0068EF",
               }}
             >
               Send me deals
@@ -564,10 +435,7 @@ export const SearchSection = () => {
       {/* new section */}
 
       <Box>
-        <Typography
-          variant="h6"
-          style={{ fontWeight: "400", textAlign: "left" }}
-        >
+        <Typography variant="h6" className={style.specialCitiesHeading}>
           Discover deals in every city
         </Typography>
 
@@ -578,32 +446,24 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Box style={{ padding: "30px", margin: "20px auto" }}>
-        <Paper
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "20px",
-            backgroundColor: "#F4F6F8"
-          }}
-        >
-          <Box style={{ textAlign: "left" }}>
+      <Box className={style.vacationBox}>
+        <Paper className={style.discountBox}>
+          <Box className={style.textAlignLeft}>
             <Typography
               variant="button"
               display="block"
-              style={{ color: "#4f6f9D", marginBottom: "10px" }}
+              className={style.discountBoxthemeHeading}
             >
               A VACATION YOU'LL REMEMBER FOREVER
             </Typography>
             <Typography
               variant="h4"
               display="block"
-              style={{ fontWeight: "500", marginBottom: "30px" }}
+              className={style.discountBoxHeading}
             >
               Walt Disney World Vacations
             </Typography>
-            <Typography style={{ fontSize: "1.4rem", color: "#4f6f9D" }}>
+            <Typography className={style.discountBoxSubHeading}>
               Book your Walt Disney World tickets here! Plus, complete your
               vacation and book your hotel.
             </Typography>
@@ -614,7 +474,7 @@ export const SearchSection = () => {
               style={{
                 backgroundColor: "#0068EF",
                 padding: "10px 20px",
-                marginTop: "20px"
+                marginTop: "20px",
               }}
             >
               More Info
@@ -622,7 +482,7 @@ export const SearchSection = () => {
           </Box>
           <Box>
             <img
-              style={{ width: "80%" }}
+              className={style.imageWidth80}
               src="https://images.ctfassets.net/sdx4pteldsvw/4l4ZVmeFp6ivXQH6MuZXHI/45ea23e34bb96b16bb35331d3bf6b23d/StarWarsGalaxyEdge.jpg?h=600&q=70"
               alt=""
             />
@@ -632,35 +492,26 @@ export const SearchSection = () => {
 
       {/* new section */}
 
-      <Box style={{width:"70vw" ,margin:"auto",textAlign:"center"}}>
-        <Typography variant="h5" style={{ fontWeight: "500" }}>
+      <Box className={style.cardBox}>
+        <Typography variant="h5" className={style.fontWeight500}>
           Maximize your savings with applying for the Priceline Rewards™ Visa®
           Card!
         </Typography>
         <ul>
-          <Typography
-            variant="h6"
-            style={{ fontWeight: "400", color: "#4f6f9D" }}
-          >
+          <Typography variant="h6" className={style.bottomLayoutThemeText}>
             <li>
               Looking to fast-track your VIP status? Automatically become VIP
               Gold once approved.
             </li>
           </Typography>
 
-          <Typography
-            variant="h6"
-            style={{ fontWeight: "400", color: "#4f6f9D" }}
-          >
+          <Typography variant="h6" className={style.bottomLayoutThemeText}>
             <li>
               Earn 5X Points on eligible hotel, flight, package, rental car and
               cruise purchases using your card.*
             </li>
           </Typography>
-          <Typography
-            variant="h6"
-            style={{ fontWeight: "400", color: "#4f6f9D" }}
-          >
+          <Typography variant="h6" className={style.bottomLayoutThemeText}>
             <li>Plus, get special cardmember coupons, discounts & perks!</li>
           </Typography>
         </ul>
@@ -670,7 +521,7 @@ export const SearchSection = () => {
           style={{
             backgroundColor: "#0068EF",
             padding: "10px 40px",
-            marginBottom: "30px"
+            marginBottom: "30px",
           }}
         >
           Learn More

@@ -4,14 +4,247 @@
 .buttonBorderNone {
   border: 0px;
 }
-.date {
+.homeBox a {
+  text-decoration: none;
+}
+
+.homeBox a:hover {
+  text-decoration: underline;
 }
 .absolutePositioningBox {
   position: absolute;
+  top: 21%;
+  left: 5%;
+  width: 60%;
+}
+.homeBannerSearchBox {
+  padding: 20px 10px;
+  background-color: #f4f6f8;
+}
+.homeBannerSearchBoxHeading {
+  text-align: left;
+  font-weight: 600;
+}
+.homeBannerSearchBoxSubHeading {
+  text-align: left;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.homeBannerSearchBoxSmallText {
+  font-size: 0.8rem;
+  width: 30%;
+  text-align: left;
+}
+.homeBannerSearchBoxButtonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+.homeBannerSearchBoxBundleLayout {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.homeBannerSearchBoxBundleOffer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  width: 50%;
+  background-color: #ecf7ec;
+}
+.homeBannerSearchBoxLastSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf7ec;
+  text-align: center;
+  padding: 10px;
+}
+.mapTripBox {
+  margin: 10px 0 20px 30px;
+  padding-top: 7px;
+  background-color: #0068ef;
+  width: 60%;
+}
+.mapTripBoxFlexItem {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+.mapTripBoxMapIcon {
+  color: #0068ef;
+  background-color: #e8f2ff;
 }
 .relativePositioningBox {
   position: relative;
 }
+.recentSearchesText {
+  text-align: left;
+  font-weight: 500;
+  margin-left: 30px;
+}
+.recentSearchesBox {
+  display: flex;
+  margin-left: 30px;
+  padding: 10px;
+}
+.recentSearchesBoxFlexItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+.recentSearchesBoxfontWeight500 {
+  font-weight: 500;
+}
+.recentSearchesBoxfontSize {
+  font-size: 0.8rem;
+}
+.priceBreakerBox {
+  display: flex;
+  padding: 30px;
+  max-width: 100vw;
+}
+.BadgeBox {
+  background-color: red;
+  width: 60%;
+}
+.priceBreakerBoxHeading {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.displayFlex {
+  display: flex;
+}
+.marginRight10px {
+  margin-right: 10px;
+}
+.priceBreakerSpecBox {
+  display: flex;
+  padding: 15px;
+  width: 90%;
+}
+.priceBreakerImageBox {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  width: 60%;
+}
+.priceBreakerImageBox img {
+  width: 50%;
+}
+.supportBox {
+  padding: 15px;
+  background-color: #f4f6f8;
+}
+.supportBoxContainer {
+  display: flex;
+  background-color: #f4f6f8;
+  padding: 30px;
+  justify-content: space-between;
+}
+.supportBoxContainerItems {
+  width: 20%;
+  text-align: center;
+}
+.supportBoxContainerText {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.discountBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #f4f6f8;
+}
+.discountTextBoxSize {
+  width: 50%;
+}
+.discountBoxthemeHeading {
+  color: #4f6f9d;
+  margin-bottom: 10px;
+}
+.discountBoxHeading {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.discountBoxSubHeading {
+  font-size: 1.4rem;
+  color: #4f6f9d;
+}
+
+.imageWidth40 {
+  width: 40%;
+}
+.imageWidth30 {
+  width: 30%;
+}
+.imageWidth80 {
+  width: 80%;
+}
+.smartPhoneBox {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.sendmailBox {
+  width: 100vw;
+  padding: 15px;
+  margin: auto;
+}
+.mailPaper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.mailTextBoxmarginPadding {
+  margin-right: 20px;
+  padding: 20px;
+}
+.fontWeight600 {
+  font-weight: 600;
+}
+.fontWeight500 {
+  font-weight: 500;
+}
+.marginRight10 {
+  margin-right: 10px;
+}
+
+.specialCitiesHeading {
+  font-weight: 400;
+  text-align: left;
+}
+.vacationBox {
+  padding: 30px;
+  margin: 20px auto;
+}
+.bottomLayoutThemeText {
+  font-weight: 400;
+  color: #4f6f9d;
+}
+.cardBox {
+  text-align: center;
+  width: 70vw;
+  margin: auto;
+}
+/* popularCitiesCommonBox */
 .gridItems {
   max-width: 100vw;
   padding: 20px;
@@ -26,6 +259,7 @@
   display: grid;
   align-items: center;
   justify-items: center;
+  text-align: center;
 }
 .gridItems > div:nth-child(1) {
   grid-column: 1 / span 2;
@@ -36,4 +270,26 @@
 
 .gridItems a {
   color: #fff;
+}
+
+.popularCitiesCommonBox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.dotIcon {
+  color: #fff;
+  width: 8px;
+  margin: 5px;
+}
+.colorWhite {
+  color: white;
+}
+.colorGreen {
+  color: green;
+}
+.themeColor {
+  color: #0068ef;
 }

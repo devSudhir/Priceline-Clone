@@ -1,3 +1,9 @@
+.buttonSignin {
+  color: #1664a8;
+  border: none;
+  background: white;
+  font-size: 16px;
+}
 .mainBox {
   display: flex;
   width: 100vw;

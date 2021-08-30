@@ -27,13 +27,13 @@ export const CommonSearchBox = () => {
     e.preventDefault();
   };
   return (
-    <Paper style={{ padding: "10px", width: "98%" }}>
+    <Paper style={{ padding: "10px" }}>
       <form>
         <Box
           style={{
             border: "1px solid #333",
             padding: "5px",
-            borderRadius: "7px"
+            borderRadius: "7px",
           }}
         >
           <Grid container spacing={1} alignItems="flex-end">
@@ -44,7 +44,7 @@ export const CommonSearchBox = () => {
               <TextField
                 label="Where to?"
                 InputProps={{
-                  disableUnderline: true // <== added this
+                  disableUnderline: true, // <== added this
                 }}
                 style={{ width: "100%" }}
               />
@@ -57,7 +57,7 @@ export const CommonSearchBox = () => {
             marginTop: "20px",
             width: "100%",
             display: "flex",
-            justifyContent: "space-between"
+            justifyContent: "space-between",
           }}
         >
           <TextField
@@ -66,7 +66,7 @@ export const CommonSearchBox = () => {
             defaultValue={new Date()}
             className={style.date}
             InputLabelProps={{
-              shrink: true
+              shrink: true,
             }}
           />
           <TextField
@@ -75,7 +75,7 @@ export const CommonSearchBox = () => {
             defaultValue={new Date()}
             className={style.date}
             InputLabelProps={{
-              shrink: true
+              shrink: true,
             }}
           />
           <Button
@@ -145,7 +145,12 @@ export const CommonSearchBox = () => {
             color="primary"
             style={{ backgroundColor: "#0068EF", padding: "10px 30px" }}
           >
-            <Link to="/Hotels" style={{color:"white",textDecoration:"none"}}>FIND YOUR HOTEL</Link>
+            <Link
+              to="/Hotels"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              FIND YOUR HOTEL
+            </Link>
           </Button>
         </Box>
       </form>
