@@ -53,10 +53,10 @@ export function RoomPage() {
   const [card, setCard] = useState({})
   const a=useParams()
   useEffect(() => {
-    axios.get("http://localhost:3001/rooms").then(res => {
+    axios.get("https://sudhir-app-test.herokuapp.com/rooms").then(res => {
        setRoom(res.data)
     })
-    axios.get(`http://localhost:3001/hotels?id=${a.id}`).then((res) => {
+    axios.get(`https://sudhir-app-test.herokuapp.com/hotels?id=${a.id}`).then((res) => {
         setCard(res.data[0])
       })
       
