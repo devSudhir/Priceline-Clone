@@ -179,9 +179,9 @@ export function Booking() {
     const [userdata, setUserData] = useState({});
     const [hotels, setHotels] = useState({});
     useEffect(() => {
-        axios.get(`http://localhost:3001/rooms?id=${a.id}`).then(result => {
+        axios.get(`https://sudhir-app-test.herokuapp.com/rooms?id=${a.id}`).then(result => {
            
-             axios.get(`http://localhost:3001/hotels?location=${result.data[0].location}`).then(res => {
+             axios.get(`https://sudhir-app-test.herokuapp.com/hotels?location=${result.data[0].location}`).then(res => {
             setHotels(res.data[0])
         })
             
