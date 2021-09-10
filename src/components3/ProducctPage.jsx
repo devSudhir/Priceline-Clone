@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
 export function ProductPage() {
  const [data, setData] = useState([]);
   useEffect(() => {
-        axios.get("http://localhost:3001/hotels").then((res) => {
+        axios.get("https://sudhir-app-test.herokuapp.com/hotels").then((res) => {
             setData(res.data)
         })
         .catch((e)=>{
@@ -80,13 +80,13 @@ export function ProductPage() {
     }, [])
 
   const handlesort = (e) => {
-    var url = "http://localhost:3001/hotels";
+    var url = "https://sudhir-app-test.herokuapp.com/hotels";
     console.log(e.target.value)
     if (e.target.value === "low") {
-      url="http://localhost:3001/hotels?_sort=price&_order=asc"
+      url="https://sudhir-app-test.herokuapp.com/hotels?_sort=price&_order=asc"
     }
     else if(e.target.value==="high"){
-      url="http://localhost:3001/hotels?_sort=price&_order=desc"
+      url="https://sudhir-app-test.herokuapp.com/hotels?_sort=price&_order=desc"
     }
    
     axios.get(url).then((res) => {
