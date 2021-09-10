@@ -47,7 +47,7 @@ export function PaymentCard() {
     const a = useParams();
     const [userRoom,setUserRoom]=useState({})
     useEffect(() => {
-        axios.get(`http://localhost:3001/rooms?id=${a.id}`).then((res) => {
+        axios.get(`https://sudhir-app-test.herokuapp.com/rooms?id=${a.id}`).then((res) => {
             setUserRoom(res.data[0]);
         })
     }, [])
