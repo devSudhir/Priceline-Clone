@@ -4,7 +4,8 @@ priceline.com : Priceline is an online hotel, fight and cruise booking platform,
 
 <img src="./PreviewImageGallery/priceline.png" width="400"/>
 
-**Our team was given a task to Clone the priceline.com Website.**
+**Our team was given a task to Clone the priceline.com Website. To see the live site click the below link.**
+*** https://priceline-clone.vercel.app ***
 
 ## Installing and Running
 
