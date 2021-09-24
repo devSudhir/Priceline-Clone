@@ -1,5 +1,5 @@
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import { Slider ,Paper,TextField, Checkbox,Radio,Button,makeStyles} from "@material-ui/core"
+import { Slider ,Paper,TextField, Checkbox,Radio,makeStyles} from "@material-ui/core"
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import SecurityIcon from '@material-ui/icons/Security';
 import styled from "styled-components"
@@ -124,6 +124,9 @@ margin-left: 6%;
     .iconupi{
         font-size: 15px;
     }
+    .bg{
+        background-color:whitesmoke;
+    }
 `
 
 const useStyles = makeStyles((theme) => ({
@@ -169,14 +172,13 @@ const useStyles = makeStyles((theme) => ({
 export function Booking() {
     const classes = useStyles()
     const a = useParams();
-    console.log(a.id);
+  
     var d = new Date();
-    console.log()
+ 
     var checkindate = d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()
     var checkout=d.getDate()+1+ "/" + d.getMonth() + "/" + d.getFullYear()
 
-    
-    const [userdata, setUserData] = useState({});
+   
     const [hotels, setHotels] = useState({});
     useEffect(() => {
         axios.get(`https://sudhir-app-test.herokuapp.com/rooms?id=${a.id}`).then(result => {
@@ -189,7 +191,7 @@ export function Booking() {
        
        
     }, [])
-    console.log(hotels,"hoteldata")
+   
 
     return <A3>
         <div className="marginAuto">
@@ -252,7 +254,7 @@ export function Booking() {
                     </Paper> :""}
           <Paper className={classes.section} elevation={3}>
 
-        <div className="bgcolor padding2"><p>The guest checking into each hotel room must be 21 or older, present a valid Photo ID and credit card.</p></div>
+        <div className="bg padding2 "><p>The guest checking into each hotel room must be 21 or older, present a valid Photo ID and credit card.</p></div>
         <div>
             <h3>Guest Name</h3>
             <h4>Room 1</h4>

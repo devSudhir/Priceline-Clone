@@ -219,8 +219,8 @@ export const Login = () => {
     </Paper>
   );
   return (
-    <Box>
-      <button type="button" className={style.buttonSignin} onClick={handleOpen}>
+    <div>
+      <button className={style.buttonSignin} onClick={handleOpen}>
         {verifiedUser ? `Hi,${verifiedUser}` : "SignIn"}
       </button>
       <Modal
@@ -232,7 +232,7 @@ export const Login = () => {
       >
         {body}
       </Modal>
-    </Box>
+    </div>
   );
 };
 

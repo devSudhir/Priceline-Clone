@@ -1,12 +1,12 @@
-import { Paper,FormControl,InputLabel,InputBase,Select,Card,Button,Box,Switch,Checkbox,ButtonGroup,Slider,TextField} from "@material-ui/core"
+import { InputBase,Button,Box,Switch,Checkbox,ButtonGroup,Slider} from "@material-ui/core"
 import { useState } from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import DeleteIcon from '@material-ui/icons/Delete';
+
 import styled from "styled-components";
 import StarIcon from '@material-ui/icons/Star';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import PoolIcon from '@material-ui/icons/Pool';
-import SearchIcon from "@material-ui/icons/Search";
+
 import PetsIcon from '@material-ui/icons/Pets';
 import LocalParkingIcon from '@material-ui/icons/LocalParking';
 import FreeBreakfastIcon from '@material-ui/icons/FreeBreakfast';
@@ -156,7 +156,7 @@ export function Sidebar() {
         <Box  className={classes.box}>
           <h4>Rate Options</h4>
           <Box className={classes.Rateflow}>
-              <Checkbox inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} /><p className="section">Pay LAter<div className="Ratedesign">(170)</div></p>
+              <Checkbox inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} /><p className="section">Pay Later<span className="Ratedesign">(170)</span></p>
           </Box>
         </Box>
         {/* guest rating */}
@@ -224,7 +224,7 @@ export function Sidebar() {
         {/* Hotel Star Level */}
          <Box className={classes.box}>
           <h4>Hotel Star Level</h4>
-          <Box className={classes.Rateflow,classes.blueborder}>
+          <Box className={classes.blueborder}>
                     <ButtonGroup size="small" aria-label="small outlined button group">
                          <Button className={classes.bordernone}>4 +</Button>
             <Button className={classes.bordernone}>5 +</Button>

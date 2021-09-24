@@ -13,7 +13,7 @@ import ErrorIcon from "@material-ui/icons/Error";
 import { Link, useParams } from "react-router-dom"
 import { useState,useEffect } from "react";
 import CaurosalsPage from "../Caurosals/CourasalsPage";
-import Bottom, { BottomPart } from "../Bottom/Bottom";
+import  { BottomPart } from "../Bottom/Bottom";
 import { Footer } from "../../Footer/Footer";
 import axios from "axios";
 
@@ -65,7 +65,7 @@ export function RoomPage() {
       })
     
   }, [])
-  console.log(room)
+
   const classes = useStyles();
   return (
     <div>

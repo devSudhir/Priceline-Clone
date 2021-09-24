@@ -10,7 +10,11 @@
                 "total":"£480 total",
                 "review": 9.0,
                 "total_review": "121 Reviews",
-                "id":1
+                "id":1,
+                "free_cancel":true,
+                "kitchen":"yes",
+                "paylater":"yes",
+                "clean":"yes"
                 
 
       },
@@ -24,7 +28,11 @@
                 "total":"£480 total",
                  "review": 8.8,
                 "total_review": "100 Reviews",
-                  "id":2
+                  "id":2,
+                "free_cancel":true,
+                "kitchen":"yes",
+                "paylater":"yes",
+                "clean":"yes"
 
       },
       {
@@ -62,7 +70,11 @@
                 "total":"£480 total",
                  "review": 6.8,
                 "total_review": "80 Reviews",
-                  "id":5
+                  "id":5,
+                "free_cancel":true,
+                "kitchen":"yes",
+                "paylater":"yes",
+                "clean":"yes"
 
       },
       {
@@ -75,7 +87,11 @@
                 "total":"£480 total",
                 "review": 8.9,
                 "total_review": "120 Reviews",
-                  "id":6
+                  "id":6,
+                "free_cancel":true,
+                "kitchen":"yes",
+                "paylater":"yes",
+                "clean":"yes"
       },
 
        {
@@ -101,7 +117,11 @@
                 "total":"£480 total",
                 "review": 4.3,
                 "total_review": "30 Reviews",
-                  "id":8
+                  "id":8,
+                "free_cancel":true,
+                "kitchen":"yes",
+                "paylater":"yes",
+                "clean":"yes"
 
       },
 
@@ -115,7 +135,11 @@
                 "total":"£480 total",
                 "review": 9.4,
                 "total_review": "180 Reviews",
-                  "id":9
+                  "id":9,
+                "free_cancel":true,
+                "kitchen":"yes",
+                "paylater":"yes",
+                "clean":"yes"
 
       },
 

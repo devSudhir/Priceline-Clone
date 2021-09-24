@@ -22,9 +22,9 @@ import { Link } from "react-router-dom";
 import { PopularCities } from "./PopularCities";
 import { CommonSearchBox } from "../CommonSearchBox";
 export const SearchSection = () => {
-  const [checkedCar, setCheckedCar] = useState(false);
-  const [checkedFlight, setCheckedFlight] = useState(false);
-  console.log(checkedCar, checkedFlight);
+ 
+ 
+
 
   const [searchModalPopup, setSearchModalPopup] = useState(false);
   const handleOpenSearchModal = () => {
@@ -33,13 +33,8 @@ export const SearchSection = () => {
   const handleCloseSearchModal = () => {
     setSearchModalPopup(false);
   };
-  const handleCheckedFlight = (event) => {
-    setCheckedFlight(event.target.checked);
-  };
 
-  const handleCheckedCar = (event) => {
-    setCheckedCar(event.target.checked);
-  };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -57,11 +52,11 @@ export const SearchSection = () => {
       {/* new section */}
       <Box className={style.absolutePositioningBox}>
         <Paper elevation={3} className={style.homeBannerSearchBox}>
-          <Typography variant="h4" className={style.homeBannerSearchBoxHeading}>
+          <Typography variant="h5" className={style.homeBannerSearchBoxHeading} style={{fontSize:"2rem",fontWeight:"700"}}>
             Need a hotel or private rental?
           </Typography>
           <Typography
-            variant="h5"
+            variant="h6"
             className={style.homeBannerSearchBoxSubHeading}
           >
             Book a room with free cancellation for more flexibility
@@ -83,7 +78,7 @@ export const SearchSection = () => {
             <FormControlLabel
               control={
                 <Checkbox
-                  onChange={handleCheckedCar}
+
                   color="primary"
                   size="small"
                 />
@@ -93,7 +88,7 @@ export const SearchSection = () => {
             <FormControlLabel
               control={
                 <Checkbox
-                  onChange={handleCheckedFlight}
+                
                   color="primary"
                   size="small"
                 />
@@ -140,7 +135,7 @@ export const SearchSection = () => {
       </Box>
 
       {/* new section */}
-      <Typography className={style.recentSearchesText}>
+      <Typography style={{marginLeft:"30px"}} className={style.recentSearchesText}>
         Your Recent Searches
       </Typography>
       <Box className={style.recentSearchesBox}>
@@ -277,7 +272,7 @@ export const SearchSection = () => {
           </Box>
           <Box className={style.supportBoxContainerItems}>
             <MonetizationOnIcon className={style.themeColor} />
-            <Typography className={style.supportBoxContainer}>
+            <Typography className={style.supportBoxContainerText}>
               INCREDIBLE DEALS
             </Typography>
             <Typography variant="button">
@@ -435,7 +430,7 @@ export const SearchSection = () => {
       {/* new section */}
 
       <Box>
-        <Typography variant="h6" className={style.specialCitiesHeading}>
+        <Typography variant="h6" className={style.specialCitiesHeading} style={{marginLeft:"20px"}}>
           Discover deals in every city
         </Typography>
 

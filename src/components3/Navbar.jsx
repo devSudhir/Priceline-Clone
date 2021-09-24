@@ -10,6 +10,7 @@ const A = styled.div`
     color:#1664a8;
     font-size: 20px;
     font-weight: bolder;
+    height:40px;
 }
 .selctoption{
 border:none;
@@ -34,7 +35,7 @@ color:#202020;
     flexGrow: 0,
   },
      menuButton: {
-         height: "4rem",
+         height: "3rem",
        background: "white",  
     color:"grey"
      },
@@ -71,9 +72,9 @@ export  function Navbar(){
      <Box >
         <Toolbar className={classes.navarbox}>
               
-            <Button color="inherit" className={classes.buutonstyle}><p className="iconpriceline" onClick={() => {
+            <button className="iconpriceline"style={{backgroundColor:"white",border:"none"}} onClick={() => {
              
-    }}> <Link className="colorwhite headeric" to="/">priceline</Link></p></Button>
+    }}> <Link className="colorwhite headeric" to="/">priceline</Link></button>
                 <Button className={classes.buutonstyle}><Link className="colorwhite" to="/Hotels">Hotels </Link></Button>
                 <Button  className={classes.buutonstyle}>Cars</Button>
                 <Button  className={classes.buutonstyle}>Flights</Button>

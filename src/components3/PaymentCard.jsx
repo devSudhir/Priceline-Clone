@@ -2,7 +2,7 @@ import { Paper } from "@material-ui/core"
 import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
-import { useHistory, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import styled from "styled-components"
 const Wrapper = styled.div`
 position: -webkit-sticky;
@@ -18,16 +18,21 @@ position: -webkit-sticky;
     text-align: right;
 
 }
+.width40{
+     width:30%;
+    text-align: right;
+}
 .total{
-    padding: 10px;
+    margin-top: 10px;
     color: green;
-    border: 1px solid grey;
+  
     font-size: large;
     font-weight: bold;
 }
 .priceline{
     padding: 10px;
     font-size: small;
+    text-align: center;
     color:#7a738f
     
 }
@@ -44,21 +49,22 @@ position: -webkit-sticky;
 }
 `
 export function PaymentCard() {
+    const c = 8;
     const a = useParams();
     const [userRoom,setUserRoom]=useState({})
     useEffect(() => {
         axios.get(`https://sudhir-app-test.herokuapp.com/rooms?id=${a.id}`).then((res) => {
             setUserRoom(res.data[0]);
         })
-    }, [])
+    }, [c])
     
 
-    console.log(userRoom,"userrrom")
+  
     return <Wrapper>
         {userRoom ? <Paper elevation={3} className="box3">
             <div className="flex">
                 <div className="width60">Cost per Night
-                    <p>1Room</p>
+                    <p style={{margin:"5px"}}>1Room</p>
                 </div>
                 <div className="width30">
                      ₹{userRoom.price}

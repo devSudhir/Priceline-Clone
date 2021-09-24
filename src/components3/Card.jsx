@@ -1,10 +1,11 @@
 import { Paper,makeStyles,Button } from "@material-ui/core"
+import { v4 as uuid } from 'uuid';
 
 import styled from "styled-components"
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import SpaTwoToneIcon from '@material-ui/icons/SpaTwoTone';
 import ListIcon from '@material-ui/icons/List';
-
+import { useParams } from "react-router";
 import RoomIcon from '@material-ui/icons/Room';
 import { Link } from "react-router-dom";
 
@@ -104,19 +105,19 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 export function Cards({ data }) {
-    console.log(data);
+      const a=useParams()
       const classes = useStyles();
     return <A>
         <div className="headerlist"><h3 style={{color:"#631833"}}>
-                 279 hotelsinBhopal, India
+            {data.length} hotels in {a.name}, India
             </h3 >
             <div style={{ marginLeft: "50%" }}><Button variant="outlined" className={classes.listviewbtn2}><ListIcon />Listview</Button>
                 <Button variant="outlined" className={classes.listviewbtn}><RoomIcon/>Map View</Button></div>
                
         </div>
         {data.map((e) => {
-            return <>
-            <Paper key={e.id} elevation={3} style={{ height: "250px" ,marginBottom:"20px"}} >
+            return <div key= {uuid()}>
+            <Paper key={uuid()} elevation={3} style={{ height: "250px" ,marginBottom:"20px"}} >
             
                 <div style={{ display: "flex" }}>
                     <div><img src={e.img} alt="" /></div>
@@ -139,13 +140,13 @@ export function Cards({ data }) {
                     </div>
                     <div style={{ borderLeft: "1px solid #c8c9c8",paddingLeft:"10px",textAlign:"center"}}>
                             <div style={{ marginTop: "130px" }}> <div className="perice">₹{e.price }</div>
-                            <p>pernight</p>
+                            <p>per-night</p>
                             <button value={e.id} className="chhosebtn" style={{ padding: "5px 30px", fontSize: "large", color: "white", background: "green" }}><Link to={`/Rooms/${e.id}`} className="colorwhite">Choose</Link></button>
                         </div>
                     </div>
                 </div>
                 </Paper>
-                </>
+                </div>
      
         })}
             </A>

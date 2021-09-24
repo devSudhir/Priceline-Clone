@@ -18,9 +18,9 @@ function App() {
     
     
       <Switch>
-
-        <Route exact path="/"> <Offer></Offer> <Navbar />  <SearchSection /><Footer/></Route>
-        <Route path="/Hotels"> <Navbar />  <AllSearch/><ProductPage /><Footer/></Route>
+         
+        <Route exact path="/"><div style={{overflowX:"hidden"}}><Offer/> <Navbar />  <SearchSection /><Footer/></div></Route>
+        <Route path="/Hotels/:name"> <Navbar /> <AllSearch/><ProductPage /><Footer/></Route>
         <Route exact path="/Rooms/:id"> <Navbar />  <AllSearch/><RoomPage/></Route>
         <Route path="/users/:id"> <Navbar /><Booking/></Route>
         <Route exact path="/userid"> <Navbar /></Route>

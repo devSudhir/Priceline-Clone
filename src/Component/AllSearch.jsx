@@ -1,13 +1,13 @@
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import SearchIcon from "@material-ui/icons/Search";
+
 import Box from "@material-ui/core/Box";
 import Modal from "@material-ui/core/Modal";
 import Typography from "@material-ui/core/Typography";
 import { useState } from "react";
 import style from "./Hotel/SearchSection.module.css";
-import Grid from "@material-ui/core/Grid";
+
 import { Link } from "react-router-dom";
 export const AllSearch = () => {
   const [adults, setAdults] = useState(2);
@@ -33,7 +33,7 @@ export const AllSearch = () => {
 
         <Box
           style={{
-            marginTop: "20px",
+            marginBottom: "10px",
             width: "100%",
             display: "flex",
             justifyContent: "space-between"
@@ -42,7 +42,7 @@ export const AllSearch = () => {
           <TextField
             label="Check-in"
             type="date"
-            defaultValue={new Date()}
+         
             className={style.date}
             InputLabelProps={{
               shrink: true
@@ -51,7 +51,7 @@ export const AllSearch = () => {
           <TextField
             label="Check-out"
             type="date"
-            defaultValue={new Date()}
+         
             className={style.date}
             InputLabelProps={{
               shrink: true

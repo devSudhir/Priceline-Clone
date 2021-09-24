@@ -14,7 +14,7 @@ export const CommonSearchBox = () => {
   const [rooms, setRooms] = useState(1);
   const [children, setChildren] = useState(0);
   const [openFormModal, setOpenFormModal] = useState(false);
-
+  const [data,setData] = useState("");
   const handleCloseModal = () => {
     setOpenFormModal(false);
   };
@@ -26,6 +26,10 @@ export const CommonSearchBox = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+  const handleChange = (e)=> {
+    setData(e.target.value);
+  }
+
   return (
     <Paper style={{ padding: "10px" }}>
       <form>
@@ -38,15 +42,16 @@ export const CommonSearchBox = () => {
         >
           <Grid container spacing={1} alignItems="flex-end">
             <Grid item>
-              <SearchIcon />
+              <SearchIcon style={{paddingBottom:"10px"}} />
             </Grid>
             <Grid item style={{ width: "70%" }}>
               <TextField
+                onChange={handleChange}
                 label="Where to?"
                 InputProps={{
                   disableUnderline: true, // <== added this
                 }}
-                style={{ width: "100%" }}
+                style={{ width: "100%",paddingBottom:"10px"}}
               />
             </Grid>
           </Grid>
@@ -63,7 +68,7 @@ export const CommonSearchBox = () => {
           <TextField
             label="Check-in"
             type="date"
-            defaultValue={new Date()}
+        
             className={style.date}
             InputLabelProps={{
               shrink: true,
@@ -72,7 +77,7 @@ export const CommonSearchBox = () => {
           <TextField
             label="Check-out"
             type="date"
-            defaultValue={new Date()}
+           
             className={style.date}
             InputLabelProps={{
               shrink: true,
@@ -146,7 +151,7 @@ export const CommonSearchBox = () => {
             style={{ backgroundColor: "#0068EF", padding: "10px 30px" }}
           >
             <Link
-              to="/Hotels"
+              to={`/Hotels/${data}`}
               style={{ color: "white", textDecoration: "none" }}
             >
               FIND YOUR HOTEL

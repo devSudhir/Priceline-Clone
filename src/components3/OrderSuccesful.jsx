@@ -6,7 +6,7 @@ import Modal from "@material-ui/core/Modal";
 
 import style from "../Component/Login/Login.module.css";
 import { useState } from "react";
-import { Redirect, useHistory } from "react-router-dom";
+import {useHistory } from "react-router-dom";
 export const Ordersucessfuly = () => {
 
   const [openLoginModal, setOpenLoginModal] = useState(false);
@@ -15,7 +15,7 @@ export const Ordersucessfuly = () => {
   };
   const handleClose = () => {
     setOpenLoginModal(false);
-    history.push("/Hotels")
+    history.push("/")
   };
   const history = useHistory();
   const body = (

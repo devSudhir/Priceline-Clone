@@ -1,7 +1,7 @@
-import { Paper,FormControl,InputLabel,InputBase,Select,Card,Button,Box,Switch,Checkbox,ButtonGroup,Slider,TextField} from "@material-ui/core"
+import { Paper,Button,Box} from "@material-ui/core"
 
 import { makeStyles } from '@material-ui/core/styles';
-import DeleteIcon from '@material-ui/icons/Delete';
+
 import styled from "styled-components";
 import { useEffect,useState} from "react";
 import { Cards } from "./Card"
@@ -81,18 +81,47 @@ export function ProductPage() {
 
   const handlesort = (e) => {
     var url = "https://sudhir-app-test.herokuapp.com/hotels";
-    console.log(e.target.value)
+  
     if (e.target.value === "low") {
       url="https://sudhir-app-test.herokuapp.com/hotels?_sort=price&_order=asc"
     }
     else if(e.target.value==="high"){
       url="https://sudhir-app-test.herokuapp.com/hotels?_sort=price&_order=desc"
     }
-   
+  
     axios.get(url).then((res) => {
+        console.log(res.data)
             setData(res.data)
         })
-}
+  }
+  const freeCancelation = ()=>{
+    axios.get("https://sudhir-app-test.herokuapp.com/hotels?free_cancel=true").then((res) => {
+       console.log(res.data)
+            setData(res.data)
+        })
+    
+  }
+   const clean = ()=>{
+    axios.get("https://sudhir-app-test.herokuapp.com/hotels?clean=true").then((res) => {
+       console.log(res.data)
+            setData(res.data)
+        })
+    
+  }
+   const kitchen = ()=>{
+    axios.get("https://sudhir-app-test.herokuapp.com/hotels?kitchen=true").then((res) => {
+       console.log(res.data)
+            setData(res.data)
+        })
+    
+  }
+   const paylater = ()=>{
+    axios.get("https://sudhir-app-test.herokuapp.com/hotels?paylater=false").then((res) => {
+       console.log(res.data)
+            setData(res.data)
+        })
+    
+  }
   const classes = useStyles();
 
 
@@ -109,10 +138,10 @@ export function ProductPage() {
  
   </select>
             <Button  className={classes.buutonstyle}value="default" variant="outlined" onClick={handlesort}>Default</Button>
-            <Button  className={classes.buutonstyle} variant="outlined">FreeCancelation</Button>
-            <Button  className={classes.buutonstyle} variant="outlined">New Cleaning Protocol</Button>
-            <Button  className={classes.buutonstyle} variant="outlined">Kitchen</Button>
-             <Button  className={classes.buutonstyle} variant="outlined">Pay Later</Button>
+            <Button  className={classes.buutonstyle} variant="outlined" onClick={freeCancelation}>FreeCancelation</Button>
+            <Button  className={classes.buutonstyle} variant="outlined" onClick={clean}>New Cleaning Protocol</Button>
+            <Button  className={classes.buutonstyle} variant="outlined" onClick={kitchen}>Kitchen</Button>
+             <Button  className={classes.buutonstyle} variant="outlined" onClick={paylater}>Pay Later</Button>
         </Box>
         <Box className={classes.ppage}>
           <Sidebar />
